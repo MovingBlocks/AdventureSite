@@ -58,8 +58,8 @@ body {
   }
   
   
-  .Gooey {
-  bottom:10%;
+  .gooey {
+      bottom:10%;
       position:absolute;
       width: 30%; height: auto;
       max-width:200px;
@@ -68,7 +68,7 @@ body {
   }
   
   
-  .Gooey-Message{
+  .gooey-message{
       border:solid 5px;
       border-color:yellow;
       border-radius: 5px;
@@ -80,7 +80,7 @@ body {
       word-wrap:break-word;
   }
   
-  .Gooey-Message:after {
+  .gooey-message:after {
     content: " ";
     position: absolute;
     left: -14px;
@@ -91,26 +91,25 @@ body {
     border-bottom: 15px solid transparent;
   }
   
-  #User-Message-Div{
+  #user-message-section{
       width:100%; position:static; height:200px;  background: rgba(0, 0, 0, 0.8);	
       border: solid 3px #fff;
       margin-bottom:500px;  
   }
   
   @media screen and (max-width: 600px) {
-  .Gooey {
-      width: 30%; height: auto;
-      max-width:200px;
-      max-height: 100px; 	 
+  .gooey {
+      width: 35%; 
+      height: auto; 	 
       position:absolute;
   }
   
-  .Gooey-Message {
+  .gooey-message {
      margin-left:150px;   
      bottom:5%;
    } 
    
-  .Gooey-Message:after{
+  .gooey-message:after{
   border-top: 5px solid transparent;
    border-bottom: 5px solid transparent;
       top:unset;
