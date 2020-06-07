@@ -3,7 +3,7 @@ import gooey from '../img/gooey.png';
 
 export function BottomNavbar() {
   return (
-    <div className='bottomNav' id='bottomNav'>
+    <div className='bottom-nav' id='bottom-nav'>
       <img className='gooey' src={gooey} alt='Gooey'></img>
 
       <div className='gooey-message' id='Gooey-Message'>
