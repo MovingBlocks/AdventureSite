@@ -1,160 +1,173 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .box.arrow-right:after {
-    content: " ";
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.box.arrow-right:after {
+  content: ' ';
+  position: absolute;
+  right: -25px;
+  top: 50px;
+  border-top: 13px solid transparent;
+  border-right: none;
+  border-left: 25px solid black;
+  border-bottom: 10px solid transparent;
+}
+
+.bottom-nav {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.15) 35%,
+    #e7e7e7 75.08%
+  );
+  height: 200px;
+  padding: 5px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #7cb342;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.gooey {
+  bottom: 10%;
+  position: absolute;
+  width: 30%;
+  height: auto;
+  max-width: 200px;
+  max-height: 100px;
+}
+
+.gooey-message {
+  border: solid 5px;
+  border-color: yellow;
+  border-radius: 5px;
+  width: auto;
+  min-height: 35px;
+  position: absolute;
+  margin-left: 220px;
+  bottom: 35%;
+  padding: 10px;
+  max-width: 800px;
+  background: #000000;
+  font-size: 20px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.gooey-message:after {
+  content: ' ';
+  position: absolute;
+  left: -14px;
+  top: 15px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid black;
+  border-left: none;
+  border-bottom: 15px solid transparent;
+}
+
+#user-message-section {
+  width: 100%;
+  position: static;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.8);
+  border: solid 3px #fff;
+  margin-bottom: 500px;
+}
+
+@media screen and (max-width: 600px) {
+  .gooey {
+    width: 35%;
+    height: auto;
     position: absolute;
-    right: -25px;
-    top: 50px;
-    border-top: 13px solid transparent;
-    border-right: none;
-    border-left: 25px solid black;
-    border-bottom: 10px solid transparent;
   }
-  
-  .bottomNav {
-   position: fixed;
-     left: 0;
-     bottom: 0;
-     width: 100%;
-    background-color: red; 
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 35%, #E7E7E7 75.08%);
-    height: 200px;
-    padding: 5px;
+
+  .gooey-message {
+    margin-left: 150px;
+    bottom: 5%;
   }
-  
-  .topnav {
-      overflow: hidden;
-      background-color: #7CB342;
-      left: 0;
-      top: 0;
-      min-width: 100%;
+
+  .gooey-message:after {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    top: unset;
+    bottom: 10px;
   }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .topnav .icon {
+
+  .topnav a:not(:first-child) {
     display: none;
   }
-  
-  
-  .Gooey {
-  bottom:10%;
-      position:absolute;
-      width: 30%; height: auto;
-      max-width:200px;
-      max-height: 100px; 	 
-  
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  
-  
-  .Gooey-Message{
-      border:solid 5px;
-      border-color:yellow;
-      border-radius: 5px;
-      width:auto; min-height:35px; position:absolute; 
-      margin-left:220px;
-      bottom:35%;
-      padding:10px;  max-width:800px;
-      background:#000000; font-size:20px;	color:white; 
-      word-wrap:break-word;
+  /* Show logo in Mobile view */
+  .topnav a:nth-child(5n) {
+    display: block;
   }
-  
-  .Gooey-Message:after {
-    content: " ";
+
+  .topnav.showmenu {
+    position: fixed;
+  }
+  .topnav.showmenu .icon {
     position: absolute;
-    left: -14px;
-    top: 15px;
-    border-top: 15px solid transparent;
-    border-right: 15px solid black;
-    border-left: none;
-    border-bottom: 15px solid transparent;
+    right: 0;
+    top: 0;
   }
-  
-  #User-Message-Div{
-      width:100%; position:static; height:200px;  background: rgba(0, 0, 0, 0.8);	
-      border: solid 3px #fff;
-      margin-bottom:500px;  
+  .topnav.showmenu a {
+    float: none;
+    display: block;
+    text-align: left;
   }
-  
-  @media screen and (max-width: 600px) {
-  .Gooey {
-      width: 30%; height: auto;
-      max-width:200px;
-      max-height: 100px; 	 
-      position:absolute;
-  }
-  
-  .Gooey-Message {
-     margin-left:150px;   
-     bottom:5%;
-   } 
-   
-  .Gooey-Message:after{
-  border-top: 5px solid transparent;
-   border-bottom: 5px solid transparent;
-      top:unset;
-      bottom:10px;
-  } 
-  
-    .topnav a:not(:first-child)   {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    /* Show logo in Mobile view */
-    .topnav a:nth-child(5n) {display:block;}
-  
-    
-  
-    .topnav.showmenu {position: fixed;}
-    .topnav.showmenu .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.showmenu a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-  
-  .cover-img {
-  position:absolute;
-    background-image:url("../img/ss_6.jpg"); 
-    height: 100%;
-    width:100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow:hidden;
-  }
-  
-  .pruple-tint {
-    position: relative;
-   background: rgba(143, 0, 166, 0.4);
-    width: 100%;
-    height:100%;
-  }
-  
+}
+
+.cover-img {
+  position: absolute;
+  background-image: url('../img/ss_6.jpg');
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pruple-tint {
+  position: relative;
+  background: rgba(143, 0, 166, 0.4);
+  width: 100%;
+  height: 100%;
+}
