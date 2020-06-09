@@ -99,13 +99,23 @@ body {
   border-bottom: 15px solid transparent;
 }
 
-#user-message-section {
+.user-message-section {
   width: 100%;
   position: static;
-  height: 200px;
+  padding: 2px;
+  margin: 2px;
+  height: auto;
   background: rgba(0, 0, 0, 0.8);
   border: solid 3px #fff;
   margin-bottom: 500px;
+}
+
+.message-collapse-button {
+  padding: 1px;
+  color: yellow;
+  background: black;
+  border: none;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
