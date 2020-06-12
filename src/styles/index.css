@@ -3,17 +3,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.box.arrow-right:after {
-  content: ' ';
-  position: absolute;
-  right: -25px;
-  top: 50px;
-  border-top: 13px solid transparent;
-  border-right: none;
-  border-left: 25px solid black;
-  border-bottom: 10px solid transparent;
-}
-
 .bottom-nav {
   position: fixed;
   left: 0;
@@ -32,7 +21,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-color: #7cb342;
+  background-color: green;
   left: 0;
   top: 0;
   min-width: 100%;
@@ -54,7 +43,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #4caf50;
+  background-color: darkgreen;
   color: white;
 }
 
@@ -79,13 +68,15 @@ body {
   min-height: 35px;
   position: absolute;
   margin-left: 220px;
-  bottom: 35%;
+  margin-right: 10px;
+  bottom: 20%;
   padding: 10px;
   max-width: 800px;
-  background: #000000;
-  font-size: 20px;
+  background: black;
+  font-size: 18px;
   color: white;
   word-wrap: break-word;
+  max-height: 100%;
 }
 
 .gooey-message:after {
@@ -99,35 +90,116 @@ body {
   border-bottom: 15px solid transparent;
 }
 
+.user {
+  margin: 5px;
+  margin-top: 8px;
+  margin-bottom: -15px;
+  position: relative;
+  width: auto;
+  height: 30%;
+  max-width: 100px;
+  max-height: auto;
+}
+
 .user-message-section {
   width: 100%;
-  position: static;
-  padding: 2px;
-  margin: 2px;
-  height: auto;
-  background: rgba(0, 0, 0, 0.8);
-  border: solid 3px #fff;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
   margin-bottom: 500px;
+}
+
+.user-message {
+  overflow: auto;
+  border: solid 5px;
+  border-color: yellow;
+  border-radius: 5px;
+  width: 100%;
+  margin-left: 5px;
+  height: 100%;
+  min-height: 35px;
+  padding: 10px;
+  padding-bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  font-size: 18px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.arrow {
+  height: 1px;
+  margin-top: 30px;
+  border-top: 15px solid transparent;
+  border-right: none;
+  border-left: 25px solid yellow;
+  border-bottom: 15px solid transparent;
 }
 
 .message-collapse-button {
   padding: 1px;
   color: yellow;
-  background: black;
+  background: transparent;
   border: none;
   font-size: 15px;
+}
+
+.tip {
+  margin: 3px;
+  font-size: 18px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+.user-name {
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  font-family: 'Lucida Sans';
+}
+
+.response {
+  inline-size: auto;
+  margin: 5px;
+  font-size: 18px;
+  display: inline-block;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: fit-content;
+  border: greenyellow 1px solid;
+  background-color: rgba(0, 255, 0, 0.1);
+  color: white;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 600px) {
   .gooey {
     width: 35%;
     height: auto;
-    position: absolute;
+    /*   position: absolute; */
+  }
+
+  .user {
+    max-height: 75px;
+    height: auto;
+    width: auto;
   }
 
   .gooey-message {
     margin-left: 150px;
     bottom: 5%;
+    overflow: visible;
+  }
+
+  .gooey-message.over-auto {
+    margin-left: 150px;
+    bottom: 5%;
+    overflow: auto;
   }
 
   .gooey-message:after {
@@ -181,3 +253,28 @@ body {
   width: 100%;
   height: 100%;
 }
+
+/* Scrollbar Styling*/
+
+/* Scrollbar */
+.scroll {
+  scroll-margin-right: 10px;
+}
+.scroll ::-webkit-scrollbar {
+  width: 25px;
+  padding: 100px;
+  border-radius: 50px;
+}
+
+/* Handle */
+.scroll ::-webkit-scrollbar-thumb {
+  height: 6px;
+  border: 8px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 50px;
+  -webkit-border-radius: 80px;
+  background-color: rgb(49, 150, 2);
+  box-shadow: transparent;
+  -webkit-box-shadow: inset -1.5px -1px 0px yellow;
+}
+/* Scrollbar Styling End */

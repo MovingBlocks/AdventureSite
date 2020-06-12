@@ -3,11 +3,14 @@ import gooey from '../img/gooey.png';
 import { Constants } from '../Constants';
 
 export function BottomNavbar() {
+  //Reference for gooey-message for DOM modification.
+  let gooeyMessage = React.createRef();
+
   // State Intiallization
 
   // Message text in collapsed mode.
   const [displayMessage, setdisplayMessage] = useState(
-    'Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks & Terasology better_______ blah blah blah blah blah blah blah blah blah blah blah blah blah blah :) '
+    'Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks & Terasology better_______ blah blah blah blah blah blah blah blah blah blah blah blah blah blah :) Lorem ipsum dolor sit amet consectetur adipisicing elit. '
   );
 
   // Message text after `Read More`
@@ -38,12 +41,21 @@ export function BottomNavbar() {
       setpostfix(Constants.readMore);
     }
     setisCollapsed(!isCollapsed);
+
+    //only for mobile phones (handling the overflowed chat arrow element `gooey-message:after`)
+    var classname = gooeyMessage.current.className;
+
+    if (classname === 'gooey-message') {
+      gooeyMessage.current.className += ' over-auto';
+    } else {
+      gooeyMessage.current.className = 'gooey-message';
+    }
   }
 
   return (
-    <div className='bottom-nav' id='bottom-nav'>
+    <div className='bottom-nav scroll'>
       <img className='gooey' src={gooey} alt='Gooey'></img>
-      <div className='gooey-message'>
+      <div className='gooey-message' ref={gooeyMessage}>
         {displayMessage}
         {!isCollapsed ? hiddenMessage : null}
         {isMessageLong ? (
