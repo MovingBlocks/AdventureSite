@@ -123,7 +123,6 @@ body {
   background: rgba(0, 0, 0, 0.9);
   font-size: 18px;
   color: white;
-  word-wrap: break-word;
 }
 
 .arrow {
@@ -163,17 +162,18 @@ body {
 }
 
 .response {
-  inline-size: auto;
-  margin: 5px;
+  position: relative;
+  color: white;
+  width: fit-content;
+  height: auto;
+  margin: 10px;
   font-size: 18px;
-  display: inline-block;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  width: fit-content;
   border: greenyellow 1px solid;
   background-color: rgba(0, 255, 0, 0.1);
-  color: white;
+
   border-radius: 50px;
 }
 
@@ -254,6 +254,21 @@ body {
   height: 100%;
 }
 
+/* Path Map Styling */
+.svg {
+  height: 500px;
+}
+
+.path-line {
+  stroke: white;
+  stroke-width: 5px;
+}
+
+.tooltip-line {
+  stroke: yellow;
+  stroke-width: 3px;
+}
+
 /* Scrollbar Styling*/
 
 /* Scrollbar */
@@ -278,3 +293,59 @@ body {
   -webkit-box-shadow: inset -1.5px -1px 0px yellow;
 }
 /* Scrollbar Styling End */
+
+/* Graph Styles */
+
+.node .c1 {
+  fill: #7cb342;
+  stroke-width: 3px;
+  stroke: white;
+  pointer-events: all;
+}
+
+.node .c2 {
+  fill: white;
+  stroke-width: 3px;
+  stroke: black;
+  pointer-events: all;
+}
+
+.tooltip {
+  visibility: hidden;
+}
+
+.node:hover .c1 {
+  fill: white;
+  stroke: #7cb342;
+}
+
+.node:hover .c2 {
+  fill: #7cb342;
+  stroke: black;
+}
+
+.node:hover + .tooltip {
+  visibility: visible;
+}
+
+/* Transition Animation */
+
+.fade-appear,
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 400ms linear 250ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}

@@ -1,29 +1,40 @@
 [
-  { "name": "First Role" },
-  { "name": "First Role" },
-  { "name": "First Role" },
-  { "name": "Second Role" },
-  { "name": "Second Role" },
-  { "name": "Second Role" },
-  { "name": "Second Role" },
-  { "name": "Second Role" },
-  { "name": "Second Role" },
-  { "name": "Third Role" },
-  { "name": "Third Role" },
-  { "name": "Third Role" },
-  { "name": "Third Role" },
-  { "name": "Fourth Role" },
-  { "name": "Fourth Role" },
-  { "name": "Fourth Role" },
-  { "name": "Fourth Role" },
-  { "name": "Fifth Role" },
-  { "name": "Fifth Role" },
-  { "name": "Sixth Role" },
-  { "name": "Sixth Role" },
-  { "name": "Sixth Role" },
-  { "name": "Sixth Role" },
-  { "name": "Seventh Role" },
-  { "name": "Seventh Role" },
-  { "name": "Seventh Role" },
-  { "name": "Seventh Role" }
+  {
+    "name": "🔦 I wish to learn more about Terasology. ",
+    "child": [
+      {
+        "name": "🎮 Just tell me about playing Terasology. 🎮",
+        "child": [{ "name": "gaming :construction.." }]
+      },
+      {
+        "name": "💻 Let's talk <code/>... I wish to Contribute 💻",
+        "child": [
+          { "name": "Tell me about web dev." },
+          {
+            "name": "I wish to know more about core Game Engine stuff.. (in Java) ☕",
+            "child": [
+              { "name": "I wish to learn more about AI/Behaviour" },
+              {
+                "name": "I wish to learn more about Architecture",
+                "child": [
+                  {
+                    "name": "I wish to know more about Block Arch.",
+                    "link": "map"
+                  },
+                  { "name": "I wish to know more about Shape Arch." },
+                  { "name": "etc." }
+                ]
+              },
+              { "name": "🎮 I wish to learn more about Multiplayer 🕹️" }
+            ]
+          },
+          { "name": "Etc" },
+          { "name": "Etc.." },
+          { "name": "Etc..Etc..Etc.." }
+        ]
+      }
+    ]
+  },
+  { "name": "I wish to learn more about in DestinationSol." },
+  { "name": "👋 I'm new here, Help me to choose..." }
 ]
