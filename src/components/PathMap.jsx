@@ -25,7 +25,7 @@ export default function PathMap() {
               strokeWidth='5px'
               fillOpacity='80%'
             ></rect>
-            <text fontFamily='Consolas' fontSize='14px' fill='white'>
+            <text fontFamily='Consolas' fontSize='90%' fill='white'>
               <tspan x='2.5%' y='35%'>
                 Block Attributes,
               </tspan>
@@ -129,7 +129,7 @@ export default function PathMap() {
               strokeWidth='5px'
               fillOpacity='80%'
             ></rect>
-            <text fontFamily='Consolas' fontSize='14px' fill='white'>
+            <text fontFamily='Consolas' fontSize='90%' fill='white'>
               <tspan x='57.5%' y='55%'>
                 This is Fourth Resource,
               </tspan>

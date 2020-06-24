@@ -12,7 +12,7 @@ export default function UserMessage() {
     <div className='user-message-section scroll'>
       <div className='user-message'>{<UserResponseList />}</div>
       <div className='arrow'></div>
-      <div>
+      <div className='user-profile-section'>
         <img className='user' alt={'User'} src={user}></img>
         <p className='user-name'>{userName}</p>
       </div>

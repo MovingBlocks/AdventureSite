@@ -24,11 +24,7 @@ export function Navbar() {
       <a href='/'>Link 2</a>
       <a href='/'>About</a>
       <a href='/' style={{ margin: '0', padding: '0' }}>
-        <img
-          src={logo}
-          style={{ maxWidth: '220px', padding: '0', margin: '0' }}
-          alt='logo'
-        ></img>
+        <img src={logo} className='logo' alt='logo'></img>
       </a>
 
       <a className='icon' ref={icon} onClick={NavBarResponsive}>
