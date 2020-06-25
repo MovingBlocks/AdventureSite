@@ -1,50 +1,32 @@
-import React, { useState } from 'react';
-import user from '../img/user-img-test.png';
-import { UserResponseList } from './UserResponseList';
+import React from 'react';
+import PathMap from './PathMap';
+import { Switch, Route, HashRouter as Router } from 'react-router-dom';
+import UserMessage from './UserMessage';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 export function UserMessageSection() {
-  const [userName, setuserName] = useState('Test-User >');
-
   return (
-    <>
+    <div>
       <div>
         <center>
           <div className='tip'>Tip : Choose one of the following options.</div>
         </center>
       </div>
-      <div className='user-message-section scroll'>
-        <div className='user-message'>
-          {<UserResponseList />}
+      <Router>
+        <Route
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition key={location.key} timeout={650} classNames='fade'>
+                <Switch location={location}>
+                  <Route path='/' exact component={UserMessage} />
 
-          {/* following section will be removed later, It's for testing the behaviour of the div having large data*/}
-          <center>
-            || ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||--------- Added this to test the scrollbar ---------||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br> ||
-            ---------------------------------------------------------- ||
-            <br></br>
-          </center>
-
-          {/* End of test section */}
-        </div>
-        <div className='arrow'></div>
-        <div>
-          <img className='user' alt={'User'} src={user}></img>
-          <p className='user-name'>{userName}</p>
-        </div>
-      </div>
-    </>
+                  <Route path='/map' component={PathMap} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
+      </Router>
+    </div>
   );
 }
