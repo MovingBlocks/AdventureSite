@@ -13,7 +13,7 @@ export default function UserMessage() {
       <div className='user-message'>{<UserResponseList />}</div>
       <div className='arrow'></div>
       <div className='user-profile-section'>
-        <img className='user' alt={'User'} src={user}></img>
+        <img className='user-img' alt={'User'} src={user}></img>
         <p className='user-name'>{userName}</p>
       </div>
     </div>

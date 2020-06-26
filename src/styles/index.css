@@ -96,9 +96,7 @@ body {
   border-bottom: 0.8em solid transparent;
 }
 
-.user {
-  margin: 1em;
-  margin-bottom: 0em;
+.user-img {
   position: relative;
   width: auto;
   height: 5em;
@@ -107,10 +105,12 @@ body {
 }
 
 .user-profile-section {
-  padding: 1em;
+  padding: 0.1em;
+  text-align: center;
+  padding-right: 1em;
 }
+
 .user-message-section {
-  padding-top: 1em;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -124,7 +124,6 @@ body {
   border-color: greenyellow;
   width: fit-content;
   border-radius: 5px;
-  margin-left: 0.5%;
   max-height: 10em;
   min-height: 35%;
   padding: 1em;
@@ -160,7 +159,7 @@ body {
   width: fit-content;
   background-color: darkblue;
   color: white;
-  opacity: 75%;
+  opacity: 0.75;
   border-radius: 2em;
 }
 
@@ -183,7 +182,6 @@ body {
   padding-right: 10px;
   border: greenyellow 1px solid;
   background-color: rgba(0, 255, 0, 0.1);
-
   border-radius: 20px;
 }
 
@@ -197,16 +195,20 @@ body {
   .tip {
     font-size: 1em;
   }
-  .user {
-    max-height: 75px;
+  .user-img {
+    max-height: 5em;
     height: auto;
     width: auto;
   }
   .user-message {
+    padding: 0.1em;
     max-height: 15em;
     font-size: 1.2em;
   }
 
+  .user-profile-section {
+    padding-right: 0.5em;
+  }
   .gooey-message {
     margin-left: 150px;
     bottom: 5%;
