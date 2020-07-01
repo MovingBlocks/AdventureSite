@@ -4,7 +4,7 @@ import { Switch, Route, HashRouter as Router } from 'react-router-dom';
 import UserMessage from './UserMessage';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-export function UserMessageSection() {
+export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
   return (
     <div>
       <div>
@@ -18,7 +18,16 @@ export function UserMessageSection() {
             <TransitionGroup>
               <CSSTransition key={location.key} timeout={650} classNames='fade'>
                 <Switch location={location}>
-                  <Route path='/' exact component={UserMessage} />
+                  <Route
+                    path='/'
+                    exact
+                    component={() => (
+                      <UserMessage
+                        setjsonPathMap={(json) => setjsonPathMap(json)}
+                        jsonPathMap={jsonPathMap}
+                      />
+                    )}
+                  />
 
                   <Route path='/map' component={PathMap} />
                 </Switch>
