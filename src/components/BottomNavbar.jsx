@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import gooey from '../img/gooey.png';
 import { Constants } from '../Constants';
+import TypingEffect from './TypingEffect/TypingEffect';
 
-export function BottomNavbar() {
+export function BottomNavbar({ gooeyMessageText }) {
   //Reference for gooey-message for DOM modification.
   let gooeyMessage = React.createRef();
 
   // State Intiallization
+  const [gooeyText, setGooeyText] = useState(gooeyMessageText);
 
   // Message text in collapsed mode.
-  const [displayMessage, setdisplayMessage] = useState(
-    'Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks & Terasology better_______ blah blah blah blah blah blah blah blah blah blah blah blah blah blah :) Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-  );
+  const [displayMessage, setdisplayMessage] = useState(gooeyText);
 
   // Message text after `Read More`
   const [hiddenMessage, sethiddenMessage] = useState(null);
@@ -23,21 +23,32 @@ export function BottomNavbar() {
   const [isCollapsed, setisCollapsed] = useState(true);
 
   useEffect(() => {
-    const messageLength = displayMessage.length;
+    const messageLength = gooeyText.length;
 
     // if message needs to be in collapsed mode (Long Message)
     if (messageLength > Constants.maxChars) {
-      setdisplayMessage(displayMessage.substring(0, Constants.maxChars + 1));
-      sethiddenMessage(displayMessage.substring(Constants.maxChars));
+      setdisplayMessage(gooeyText.substring(0, Constants.maxChars + 1));
+      sethiddenMessage(gooeyText.substring(Constants.maxChars));
       setisMessageLong(true);
       setpostfix(Constants.readMore);
+    } else {
+      setdisplayMessage(gooeyText);
+      setisMessageLong(false);
     }
-  }, []);
+  }, [gooeyText]);
+
+  useEffect(() => {
+    setGooeyText(gooeyMessageText);
+  }, [gooeyMessageText]);
 
   function collapse() {
     if (isCollapsed) {
+      setdisplayMessage(displayMessage.concat(hiddenMessage));
       setpostfix(Constants.showLess);
     } else {
+      setdisplayMessage(
+        displayMessage.toString().replace(hiddenMessage.toString(), ' ')
+      );
       setpostfix(Constants.readMore);
     }
     setisCollapsed(!isCollapsed);
@@ -56,8 +67,14 @@ export function BottomNavbar() {
     <div className='bottom-nav scroll'>
       <img className='gooey' src={gooey} alt='Gooey'></img>
       <div className='gooey-message' ref={gooeyMessage}>
-        {displayMessage}
-        {!isCollapsed ? hiddenMessage : null}
+        {
+          <TypingEffect
+            text={displayMessage}
+            typingDelay={0}
+            speed={10}
+          ></TypingEffect>
+        }
+
         {isMessageLong ? (
           <button className='message-collapse-button' onClick={collapse}>
             {postfix}

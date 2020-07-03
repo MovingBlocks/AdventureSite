@@ -123,7 +123,7 @@ body {
   border: solid 0.2em;
   border-color: greenyellow;
   width: fit-content;
-  border-radius: 5px;
+  border-radius: 10px;
   max-height: 10em;
   min-height: 35%;
   padding: 1em;
@@ -376,45 +376,45 @@ body {
 
 @media screen and (min-width: 1420px) {
   .pruple-tint {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
   .logo {
-    max-width: 15.2em;
+    max-width: 15.2rem;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .pruple-tint {
-    font-size: 1.3em;
+    font-size: 1.3rem;
   }
   .logo {
-    max-width: 15.25em;
+    max-width: 15.25rem;
   }
 }
 
 @media screen and (min-width: 1920px) {
   .pruple-tint {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   .logo {
-    max-width: 15.3em;
+    max-width: 15.3rem;
   }
 }
 
 @media screen and (min-width: 2200px) {
   .pruple-tint {
-    font-size: 2em;
+    font-size: 2rem;
   }
   .logo {
-    max-width: 15.35em;
+    max-width: 15.35rem;
   }
 }
 
 @media screen and (min-width: 2700px) {
   .pruple-tint {
-    font-size: 2.5em;
+    font-size: 2.5rem;
   }
   .logo {
-    max-width: 15.35em;
+    max-width: 15.35rem;
   }
 }
