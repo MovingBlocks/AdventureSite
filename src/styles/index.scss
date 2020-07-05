@@ -1,68 +1,60 @@
+@import './variables';
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 .bottom-nav {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(35%, rgba(255, 255, 255, 0.15)), color-stop(75.08%, #e7e7e7));
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.15) 35%, #e7e7e7 75.08%);
+  background: $bottomNavGradient;
   height: 25%;
   padding: 2%;
 }
-
 .topnav {
   overflow: hidden;
   z-index: 10;
-  background-color: green;
+  background-color: $greenPrimary;
   left: 0;
   top: 0;
   display: block;
   min-width: 100%;
+  a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em 1em;
+    text-decoration: none;
+    font-size: 1em;
+    &:hover {
+      background-color: #ddd;
+      color: $blackPrimary;
+    }
+  }
+  a.active {
+    background-color: $greenDark;
+  }
+  .icon {
+    display: none;
+  }
 }
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 1em 1em;
-  text-decoration: none;
-  font-size: 1em;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: darkgreen;
-}
-
-.topnav .icon {
-  display: none;
-}
-
 .logo {
   max-width: 15em;
   padding: 0;
   margin: 0;
 }
-
 .gooey {
   bottom: 10%;
   position: absolute;
   width: 15%;
   height: auto;
 }
-
 .gooey-message {
   border: solid 0.2em;
-  border-color: greenyellow;
+  border-color: $greenUtility;
   border-radius: 10px;
   width: auto;
   min-height: 2em;
@@ -72,24 +64,22 @@ body {
   bottom: 20%;
   padding: 1%;
   max-width: 55%;
-  background: black;
+  background: $blackPrimary;
   font-size: 1.2em;
-  color: white;
+  color: $whitePrimary;
   word-wrap: break-word;
   max-height: 100%;
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: -0.9em;
+    top: 1.1em;
+    border-top: 0.8em solid transparent;
+    border-right: 1.1em solid $blackPrimary;
+    border-left: none;
+    border-bottom: 0.8em solid transparent;
+  }
 }
-
-.gooey-message:after {
-  content: ' ';
-  position: absolute;
-  left: -0.9em;
-  top: 1.1em;
-  border-top: 0.8em solid transparent;
-  border-right: 1.1em solid black;
-  border-left: none;
-  border-bottom: 0.8em solid transparent;
-}
-
 .user-img {
   position: relative;
   width: auto;
@@ -97,90 +87,69 @@ body {
   max-width: 100%;
   max-height: auto;
 }
-
 .user-profile-section {
   padding: 0.1em;
   text-align: center;
   padding-right: 1em;
 }
-
 .user-message-section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: flex-end;
+  flex-direction: row;
   height: 50%;
 }
-
 .user-message {
   overflow: auto;
   border: solid 0.2em;
-  border-color: greenyellow;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  border-color: $greenUtility;
   width: fit-content;
   border-radius: 10px;
   max-height: 10em;
   min-height: 35%;
   padding: 1em;
   padding-bottom: 0;
-  background: black;
+  background: $blackPrimary;
   font-size: 1.5em;
   opacity: 0.85;
-  color: white;
+  color: $whitePrimary;
 }
-
 .arrow {
   height: 0.1em;
   margin-top: 3em;
   border-top: 1em solid transparent;
   border-right: none;
-  border-left: 2em solid greenyellow;
+  border-left: 2em solid $greenUtility;
   border-bottom: 1em solid transparent;
 }
-
 .message-collapse-button {
   padding: 8px;
-  color: greenyellow;
+  color: $greenUtility;
   background: transparent;
   border: none;
   font-size: 1em;
 }
-
 .tip {
   margin: 0.3em;
   font-size: 1.1em;
   padding: 0.15em;
   padding-left: 1em;
   padding-right: 1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
-  background-color: darkblue;
-  color: white;
+  background-color: $topTipColor;
+  color: $whitePrimary;
   opacity: 0.75;
   border-radius: 2em;
 }
-
 .user-name {
   text-align: center;
   font-size: 1em;
-  color: white;
+  color: $whitePrimary;
   font-family: 'Lucida Sans';
 }
-
 .response {
   position: relative;
-  color: white;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
+  color: $whitePrimary;
   width: fit-content;
   height: auto;
   margin: 0.8em;
@@ -188,14 +157,13 @@ body {
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border: greenyellow 1px solid;
-  background-color: rgba(0, 255, 0, 0.1);
+  border: $greenUtility 1px solid;
+  background-color: $responseBackground;
   border-radius: 20px;
 }
-
 .cover-img {
   position: absolute;
-  background-image: url("../img/ss_6.jpg");
+  background-image: url('../img/ss_6.jpg');
   height: 100%;
   width: 100%;
   background-position: center;
@@ -203,121 +171,117 @@ body {
   background-size: cover;
   overflow: hidden;
 }
-
 .pruple-tint {
   position: relative;
-  background: rgba(143, 0, 166, 0.4);
+  background: $backgroundTint;
   width: 100%;
   height: 100%;
 }
 
 /* Path Map Styling */
+
 .svg {
   height: 500px;
 }
-
 .path-line {
-  stroke: white;
+  stroke: $whitePrimary;
   stroke-width: 5px;
 }
-
 .tooltip-line {
-  stroke: yellow;
+  stroke: $yellowPrimary;
   stroke-width: 3px;
 }
 
 /* Scrollbar Styling*/
+
 /* Scrollbar */
+
 .scroll {
   scroll-margin-right: 10px;
+  & ::-webkit-scrollbar {
+    width: 25px;
+    padding: 100px;
+    border-radius: 50px;
+  }
+
   /* Handle */
-}
-
-.scroll ::-webkit-scrollbar {
-  width: 25px;
-  padding: 100px;
-  border-radius: 50px;
-}
-
-.scroll ::-webkit-scrollbar-thumb {
-  height: 6px;
-  border: 8px solid black;
-  background-clip: padding-box;
-  border-radius: 50px;
-  -webkit-border-radius: 80px;
-  background-color: darkgreen;
-  box-shadow: transparent;
-  -webkit-box-shadow: inset -1.5px -1px 0px yellow;
+  & ::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 8px solid $blackPrimary;
+    background-clip: padding-box;
+    border-radius: 50px;
+    -webkit-border-radius: 80px;
+    background-color: $greenDark;
+    box-shadow: transparent;
+    -webkit-box-shadow: inset -1.5px -1px 0px $yellowPrimary;
+  }
 }
 
 /* Scrollbar Styling End */
+
 /* Graph Styles */
-.node .c1 {
-  fill: #7cb342;
-  stroke-width: 3px;
-  stroke: white;
-  pointer-events: all;
-}
 
-.node .c2 {
-  fill: white;
-  stroke-width: 3px;
-  stroke: black;
-  pointer-events: all;
+.node {
+  .c1 {
+    fill: $greenGraph;
+    stroke-width: 3px;
+    stroke: $whitePrimary;
+    pointer-events: all;
+  }
+  .c2 {
+    fill: $whitePrimary;
+    stroke-width: 3px;
+    stroke: $blackPrimary;
+    pointer-events: all;
+  }
+  &:hover {
+    .c1 {
+      fill: $whitePrimary;
+      stroke: $greenGraph;
+    }
+    .c2 {
+      fill: $greenGraph;
+      stroke: $blackPrimary;
+    }
+    + {
+      .tooltip {
+        visibility: visible;
+      }
+    }
+  }
 }
-
-.node:hover .c1 {
-  fill: white;
-  stroke: #7cb342;
-}
-
-.node:hover .c2 {
-  fill: #7cb342;
-  stroke: black;
-}
-
-.node:hover + .tooltip {
-  visibility: visible;
-}
-
 .tooltip {
   visibility: hidden;
 }
 
 /* Transition Animation */
+
 .fade-appear {
   opacity: 0;
   z-index: 1;
 }
-
 .fade-enter {
   opacity: 0;
   z-index: 1;
 }
-
 .fade-appear-active {
   opacity: 1;
-  -webkit-transition: opacity 400ms linear 250ms;
   transition: opacity 400ms linear 250ms;
 }
-
 .fade-enter.fade-enter-active {
   opacity: 1;
-  -webkit-transition: opacity 400ms linear 250ms;
   transition: opacity 400ms linear 250ms;
 }
-
 .fade-exit {
   opacity: 1;
 }
-
 .fade-exit.fade-exit-active {
   opacity: 0;
-  -webkit-transition: opacity 250ms linear;
   transition: opacity 250ms linear;
 }
 
 /* Styling for mobile screens */
+
 @media screen and (max-width: 600px) {
   .gooey {
     width: 35%;
@@ -345,47 +309,51 @@ body {
     padding: 10px;
     font-size: 1.1em;
     overflow: visible;
-  }
-  .gooey-message:after {
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    top: unset;
-    bottom: 10px;
+    &:after {
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      top: unset;
+      bottom: 10px;
+    }
   }
   .gooey-message.over-auto {
     margin-left: 150px;
     bottom: 5%;
     overflow: auto;
   }
-  .topnav a {
-    /* Show logo in Mobile view */
-  }
-  .topnav a:not(:first-child) {
-    display: none;
-  }
-  .topnav a:nth-child(5n) {
-    display: block;
-  }
-  .topnav a.icon {
-    float: right;
-    display: block;
+  .topnav {
+    a {
+      &:not(:first-child) {
+        display: none;
+      }
+
+      /* Show logo in Mobile view */
+      &:nth-child(5n) {
+        display: block;
+      }
+    }
+    a.icon {
+      float: right;
+      display: block;
+    }
   }
   .topnav.showmenu {
     position: fixed;
-  }
-  .topnav.showmenu .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.showmenu a {
-    float: none;
-    display: block;
-    text-align: left;
+    .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
   }
 }
 
 /* Optimization for bigger screens */
+
 @media screen and (min-width: 1420px) {
   .pruple-tint {
     font-size: 1.1rem;
@@ -394,7 +362,6 @@ body {
     max-width: 15.2rem;
   }
 }
-
 @media screen and (min-width: 1600px) {
   .pruple-tint {
     font-size: 1.3rem;
@@ -403,7 +370,6 @@ body {
     max-width: 15.25rem;
   }
 }
-
 @media screen and (min-width: 1920px) {
   .pruple-tint {
     font-size: 1.6rem;
@@ -412,7 +378,6 @@ body {
     max-width: 15.3rem;
   }
 }
-
 @media screen and (min-width: 2200px) {
   .pruple-tint {
     font-size: 2rem;
@@ -421,7 +386,6 @@ body {
     max-width: 15.35rem;
   }
 }
-
 @media screen and (min-width: 2700px) {
   .pruple-tint {
     font-size: 2.5rem;
@@ -430,4 +394,3 @@ body {
     max-width: 15.35rem;
   }
 }
-/*# sourceMappingURL=index.css.map */
