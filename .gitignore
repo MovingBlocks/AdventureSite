@@ -6,6 +6,10 @@ node_modules
 /.pnp
 .pnp.js
 
+#sass
+*.css
+*.css.map
+
 # testing
 /coverage
 
