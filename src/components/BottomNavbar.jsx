@@ -65,8 +65,8 @@ export function BottomNavbar({ gooeyMessageText }) {
 
   return (
     <div className='bottom-nav scroll'>
-      <img className='gooey' src={gooey} alt='Gooey'></img>
-      <div className='gooey-message' ref={gooeyMessage}>
+      <img className='gooey fade-in-to-left' src={gooey} alt='Gooey'></img>
+      <div className='gooey-message  fade-in-to-left' ref={gooeyMessage}>
         {
           <TypingEffect
             text={displayMessage}

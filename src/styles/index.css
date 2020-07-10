@@ -1,3 +1,71 @@
+.fade-in-to-right {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-10em);
+            transform: translateX(-10em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    -webkit-transform: translateX(-10em);
+            transform: translateX(-10em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    opacity: 1;
+  }
+}
+
+.fade-in-to-left {
+  animation: fadeInLeft ease 2s;
+  -webkit-animation: fadeInLeft ease 2s;
+  -moz-animation: fadeInLeft ease 2s;
+  -o-animation: fadeInLeft ease 2s;
+  -ms-animation: fadeInLeft ease 2s;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(10em);
+            transform: translateX(10em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    -webkit-transform: translateX(10em);
+            transform: translateX(10em);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0em);
+            transform: translateX(0em);
+    opacity: 1;
+  }
+}
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -105,6 +173,7 @@ body {
 }
 
 .user-message-section {
+  margin-top: 1.5em;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,6 +206,10 @@ body {
   color: white;
 }
 
+.user-message :hover {
+  border-color: white;
+}
+
 .arrow {
   height: 0.1em;
   margin-top: 3em;
@@ -152,21 +225,6 @@ body {
   background: transparent;
   border: none;
   font-size: 1em;
-}
-
-.tip {
-  margin: 0.3em;
-  font-size: 1.1em;
-  padding: 0.15em;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  background-color: darkblue;
-  color: white;
-  opacity: 0.75;
-  border-radius: 2em;
 }
 
 .user-name {
@@ -235,7 +293,7 @@ body {
 
 .scroll ::-webkit-scrollbar {
   width: 25px;
-  padding: 100px;
+  padding: 10em;
   border-radius: 50px;
 }
 
@@ -247,7 +305,7 @@ body {
   -webkit-border-radius: 80px;
   background-color: darkgreen;
   box-shadow: transparent;
-  -webkit-box-shadow: inset -1.5px -1px 0px yellow;
+  -webkit-box-shadow: inset -1.5px -1px 0em yellow;
 }
 
 /* Scrollbar Styling End */
@@ -284,47 +342,11 @@ body {
   visibility: hidden;
 }
 
-/* Transition Animation */
-.fade-appear {
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-
-.fade-appear-active {
-  opacity: 1;
-  -webkit-transition: opacity 400ms linear 250ms;
-  transition: opacity 400ms linear 250ms;
-}
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  -webkit-transition: opacity 400ms linear 250ms;
-  transition: opacity 400ms linear 250ms;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit.fade-exit-active {
-  opacity: 0;
-  -webkit-transition: opacity 250ms linear;
-  transition: opacity 250ms linear;
-}
-
 /* Styling for mobile screens */
 @media screen and (max-width: 600px) {
   .gooey {
     width: 35%;
     height: auto;
-  }
-  .tip {
-    font-size: 1em;
   }
   .user-img {
     max-height: 5em;
