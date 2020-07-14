@@ -1,4 +1,5 @@
 @import './variables';
+@import './animations';
 
 body {
   margin: 0;
@@ -93,6 +94,7 @@ body {
   padding-right: 1em;
 }
 .user-message-section {
+  margin-top: 1.5em;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -113,6 +115,10 @@ body {
   font-size: 1.5em;
   opacity: 0.85;
   color: $whitePrimary;
+  
+  & :hover{
+   border-color: $whitePrimary;
+  }
 }
 .arrow {
   height: 0.1em;
@@ -129,18 +135,7 @@ body {
   border: none;
   font-size: 1em;
 }
-.tip {
-  margin: 0.3em;
-  font-size: 1.1em;
-  padding: 0.15em;
-  padding-left: 1em;
-  padding-right: 1em;
-  width: fit-content;
-  background-color: $topTipColor;
-  color: $whitePrimary;
-  opacity: 0.75;
-  border-radius: 2em;
-}
+
 .user-name {
   text-align: center;
   font-size: 1em;
@@ -200,7 +195,7 @@ body {
   scroll-margin-right: 10px;
   & ::-webkit-scrollbar {
     width: 25px;
-    padding: 100px;
+    padding: 10em;
     border-radius: 50px;
   }
 
@@ -213,7 +208,7 @@ body {
     -webkit-border-radius: 80px;
     background-color: $greenDark;
     box-shadow: transparent;
-    -webkit-box-shadow: inset -1.5px -1px 0px $yellowPrimary;
+    -webkit-box-shadow: inset -1.5px -1px 0em $yellowPrimary;
   }
 }
 
@@ -254,41 +249,12 @@ body {
   visibility: hidden;
 }
 
-/* Transition Animation */
-
-.fade-appear {
-  opacity: 0;
-  z-index: 1;
-}
-.fade-enter {
-  opacity: 0;
-  z-index: 1;
-}
-.fade-appear-active {
-  opacity: 1;
-  transition: opacity 400ms linear 250ms;
-}
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 400ms linear 250ms;
-}
-.fade-exit {
-  opacity: 1;
-}
-.fade-exit.fade-exit-active {
-  opacity: 0;
-  transition: opacity 250ms linear;
-}
-
 /* Styling for mobile screens */
 
 @media screen and (max-width: 600px) {
   .gooey {
     width: 35%;
     height: auto;
-  }
-  .tip {
-    font-size: 1em;
   }
   .user-img {
     max-height: 5em;

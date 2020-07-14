@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function PathMap() {
   return (
-    <div>
+    <div className={"fade-in-to-right"}>
       <center>
         <svg width='100%' className='svg'>
           <a

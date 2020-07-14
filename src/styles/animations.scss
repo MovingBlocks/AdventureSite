@@ -1,0 +1,131 @@
+$animation_delay: 1s;
+//fade-in left to right
+
+.fade-in-to-right {
+    animation: fadeIn ease $animation_delay;
+    -webkit-animation: fadeIn ease $animation_delay;
+    -moz-animation: fadeIn ease $animation_delay;
+    -o-animation: fadeIn ease $animation_delay;
+    -ms-animation: fadeIn ease $animation_delay;
+
+    @keyframes fadeIn {
+        0% {
+          transform: translateX(-10em);
+          opacity:0;
+        }
+        100% {
+          transform: translateX(0em);
+          opacity:1;
+        }
+      }
+      
+      @-moz-keyframes fadeIn {
+        0% {
+          transform: translateX(-10em);
+          opacity:0;
+        }
+        100% {
+          transform: translateX(0em);
+          opacity:1;
+        }
+      }
+      
+      @-webkit-keyframes fadeIn {
+        0% {
+          transform: translateX(-10em);
+          opacity:0;
+        }
+        100% {
+          transform: translateX(0em);
+          opacity:1;
+        }
+      }
+      
+      @-o-keyframes fadeIn {
+        0% {
+          transform: translateX(-10em);
+          opacity:0;
+        }
+        100% {
+          transform: translateX(0em);
+          opacity:1;
+        }
+      }
+      
+      @-ms-keyframes fadeIn {
+        0% {
+          transform: translateX(-10em);
+          opacity:0;
+        }
+        100% {
+          transform: translateX(0em);
+          opacity:1;
+        }
+      }
+    
+
+}
+   
+//fade-in right to left  
+.fade-in-to-left {
+    animation: fadeInLeft ease $animation_delay;
+    -webkit-animation: fadeInLeft ease $animation_delay;
+    -moz-animation: fadeInLeft ease $animation_delay;
+    -o-animation: fadeInLeft ease $animation_delay;
+    -ms-animation: fadeInLeft ease $animation_delay;
+
+        @keyframes fadeInLeft {
+          0% {
+            transform: translateX(10em);
+            opacity:0;
+          }
+          100% {
+            transform: translateX(0em);
+            opacity:1;
+          }
+        }
+        
+        @-moz-keyframes fadeInLeft {
+          0% {
+            transform: translateX(10em);
+            opacity:0;
+          }
+          100% {
+            transform: translateX(0em);
+            opacity:1;
+          }
+        }
+        
+        @-webkit-keyframes fadeInLeft {
+          0% {
+            transform: translateX(10em);
+            opacity:0;
+          }
+          100% {
+            transform: translateX(0em);
+            opacity:1;
+          }
+        }
+        
+        @-o-keyframes fadeInLeft {
+          0% {
+            transform: translateX(10em);
+            opacity:0;
+          }
+          100% {
+            transform: translateX(0em);
+            opacity:1;
+          }
+        }
+        
+        @-ms-keyframes fadeInLeft {
+          0% {
+            transform: translateX(10em);
+            opacity:0;
+          }
+          100% {
+            transform: translateX(0em);
+            opacity:1;
+          }
+        }
+  }

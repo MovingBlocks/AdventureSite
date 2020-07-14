@@ -6,7 +6,7 @@ node_modules
 /.pnp
 .pnp.js
 
-#sass
+#sass support
 *.css
 *.css.map
 
@@ -16,8 +16,6 @@ node_modules
 # production
 /build
 
-public
-/public
 .vscode
 
 # misc
