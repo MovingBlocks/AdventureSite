@@ -1,11 +1,12 @@
+$animation_delay: 1s;
 //fade-in left to right
 
 .fade-in-to-right {
-    animation: fadeIn ease 2s;
-    -webkit-animation: fadeIn ease 2s;
-    -moz-animation: fadeIn ease 2s;
-    -o-animation: fadeIn ease 2s;
-    -ms-animation: fadeIn ease 2s;
+    animation: fadeIn ease $animation_delay;
+    -webkit-animation: fadeIn ease $animation_delay;
+    -moz-animation: fadeIn ease $animation_delay;
+    -o-animation: fadeIn ease $animation_delay;
+    -ms-animation: fadeIn ease $animation_delay;
 
     @keyframes fadeIn {
         0% {
@@ -67,11 +68,11 @@
    
 //fade-in right to left  
 .fade-in-to-left {
-    animation: fadeInLeft ease 2s;
-    -webkit-animation: fadeInLeft ease 2s;
-    -moz-animation: fadeInLeft ease 2s;
-    -o-animation: fadeInLeft ease 2s;
-    -ms-animation: fadeInLeft ease 2s;
+    animation: fadeInLeft ease $animation_delay;
+    -webkit-animation: fadeInLeft ease $animation_delay;
+    -moz-animation: fadeInLeft ease $animation_delay;
+    -o-animation: fadeInLeft ease $animation_delay;
+    -ms-animation: fadeInLeft ease $animation_delay;
 
         @keyframes fadeInLeft {
           0% {
