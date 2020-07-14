@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/index.css';
 
 //Each UserResponse
 export function UserResponse({ object, index, setChild, next }) {

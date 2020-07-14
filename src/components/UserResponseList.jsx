@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/index.css';
 import { UserResponse } from './UserResponse';
 import { useState, useEffect } from 'react';
 
