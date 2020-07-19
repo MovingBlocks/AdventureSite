@@ -4,7 +4,7 @@ import React from 'react';
 export function UserResponse({ object, index, setChild, next }) {
   return (
     <center>
-      <div className={"fade-in-to-right"}>
+      <div className={'fade-in-to-right'}>
         <button
           className='response'
           onClick={() => {
