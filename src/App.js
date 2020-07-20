@@ -9,10 +9,8 @@ export default function App() {
   //PathMap Object
   const [jsonPathMap, setjsonPathMap] = useState(json);
 
-  // Message text in collapsed mode.
-  const [gooeyMessage, setgooeyMessage] = useState(
-    'Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks & Terasology better_______ blah blah blah blah blah blah blah blah blah blah blah blah blah blah :) Lorem ipsum dolor sit amet consectetur adipisicing elit. '
-  );
+  // Message text is updated via PathMap json data file.
+  const [gooeyMessage, setgooeyMessage] = useState('');
 
   useEffect(() => {
     if (jsonPathMap !== undefined) {

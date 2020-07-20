@@ -75,8 +75,7 @@
           "gooey": "Which project you wish to explore? 🧐 "
         }
       }
-    },
-    { "name": "I'm Still confused, Help me!" }
+    }
   ],
   "gooey-response": {
     "gooey": "👋 Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks better. You can respond to my questions by selecting an appropriate reply in above 👆 User Section.",
