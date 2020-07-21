@@ -1,63 +1,84 @@
 {
   "user-responses": [
     {
-      "name": "🔦 I wish to learn more about Terasology. ",
+      "name": "Gotcha 👍 Let the Journey begin. 🌄",
       "child": {
         "user-responses": [
           {
-            "name": "🎮 Just tell me about playing Terasology. 🎮",
-            "child": {
-              "user-responses": [{ "name": "gaming :construction.." }],
-              "gooey-response": { "gooey": "Ok blah blah blah about gaming..." }
-            }
-          },
-          {
-            "name": "💻 Let's talk <code/>... I wish to Contribute 💻",
+            "name": "🔦 I wish to learn more about Terasology. ",
             "child": {
               "user-responses": [
-                { "name": "Tell me about web dev." },
                 {
-                  "name": "I wish to know more about core Game Engine stuff.. (in Java) ☕",
+                  "name": "🎮 Just tell me about playing Terasology. 🎮",
                   "child": {
-                    "user-responses": [
-                      { "name": "I wish to learn more about AI/Behaviour" },
-                      {
-                        "name": "I wish to learn more about Architecture",
-                        "child": {
-                          "user-responses": [
-                            {
-                              "name": "I wish to know more about Block Arch.",
-                              "link": "map"
-                            },
-                            { "name": "I wish to know more about Shape Arch." },
-                            { "name": "etc." }
-                          ],
-                          "gooey-response": { "gooey": "What about Arch ?" }
-                        }
-                      },
-                      { "name": "🎮 I wish to learn more about Multiplayer 🕹️" }
-                    ],
+                    "user-responses": [{ "name": "gaming :construction.." }],
                     "gooey-response": {
-                      "gooey": "What about of Engine stuff ?"
+                      "gooey": "Ok blah blah blah about gaming..."
                     }
                   }
                 },
-                { "name": "Etc" },
-                { "name": "Etc.." },
-                { "name": "Etc..Etc..Etc.." }
+                {
+                  "name": "💻 Let's talk <code/>... I wish to Contribute 💻",
+                  "child": {
+                    "user-responses": [
+                      { "name": "Tell me about web dev." },
+                      {
+                        "name": "I wish to know more about core Game Engine stuff.. (in Java) ☕",
+                        "child": {
+                          "user-responses": [
+                            {
+                              "name": "I wish to learn more about AI/Behaviour"
+                            },
+                            {
+                              "name": "I wish to learn more about Architecture",
+                              "child": {
+                                "user-responses": [
+                                  {
+                                    "name": "I wish to know more about Block Arch.",
+                                    "link": "map"
+                                  },
+                                  {
+                                    "name": "I wish to know more about Shape Arch."
+                                  },
+                                  { "name": "etc." }
+                                ],
+                                "gooey-response": {
+                                  "gooey": "What about Arch ?"
+                                }
+                              }
+                            },
+                            {
+                              "name": "🎮 I wish to learn more about Multiplayer 🕹️"
+                            }
+                          ],
+                          "gooey-response": {
+                            "gooey": "What about of Engine stuff ?"
+                          }
+                        }
+                      },
+                      { "name": "Etc" },
+                      { "name": "Etc.." },
+                      { "name": "Etc..Etc..Etc.." }
+                    ],
+                    "gooey-response": { "gooey": "What About Dev ?" }
+                  }
+                }
               ],
-              "gooey-response": { "gooey": "What About Dev ?" }
+              "gooey-response": { "gooey": "What about Terasology?" }
             }
-          }
-        ],
-        "gooey-response": { "gooey": "What about Terasology?" }
-      }
-    },
+          },
 
-    { "name": "I wish to learn more about in DestinationSol." },
-    { "name": "👋 I'm new here, Help me to choose..." }
+          { "name": "I wish to learn more about in DestinationSol." },
+          { "name": "👋 I'm new here, Help me to choose..." }
+        ],
+        "gooey-response": {
+          "gooey": "Which project you wish to explore? 🧐 "
+        }
+      }
+    }
   ],
   "gooey-response": {
-    "gooey": "Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks & Terasology better_______ blah blah blah blah blah blah blah blah blah blah blah blah blah blah :) Lorem ipsum dolor sit amet consectetur adipisicing elit."
+    "gooey": "👋 Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks better. You can respond to my questions by selecting an appropriate reply in above 👆 User Section.",
+    "firstMessage": true
   }
 }

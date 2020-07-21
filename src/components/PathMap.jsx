@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function PathMap() {
   return (
-    <div className={"fade-in-to-right"}>
+    <div className={'fade-in-to-right'}>
       <center>
         <svg width='100%' className='svg'>
           <a
@@ -13,7 +13,7 @@ export default function PathMap() {
             <circle className='c1' cx='10%' cy='10%' r='4%'></circle>
             <circle className='c2' cx='10%' cy='10%' r='2%'></circle>
           </a>
-          <a to='#' className='tooltip'>
+          <Link to='#' className='tooltip'>
             <rect
               width='16%'
               height='16%'
@@ -39,7 +39,7 @@ export default function PathMap() {
               y2='30%'
               className='tooltip-line'
             ></line>
-          </a>
+          </Link>
           <line
             x1='10%'
             y1='10%'

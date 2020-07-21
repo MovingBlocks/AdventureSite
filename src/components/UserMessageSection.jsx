@@ -5,25 +5,24 @@ import UserMessage from './UserMessage';
 
 export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
   return (
-    <div className={"fade-in-to-right"}>
+    <div className={'fade-in-to-right'}>
       <Router>
         <Route
           render={({ location }) => (
-
-                <Switch location={location}>
-                  <Route
-                    path='/'
-                    exact
-                    component={() => (
-                      <UserMessage
-                        setjsonPathMap={(json) => setjsonPathMap(json)}
-                        jsonPathMap={jsonPathMap}
-                      />
-                    )}
+            <Switch location={location}>
+              <Route
+                path='/'
+                exact
+                component={() => (
+                  <UserMessage
+                    setjsonPathMap={(json) => setjsonPathMap(json)}
+                    jsonPathMap={jsonPathMap}
                   />
+                )}
+              />
 
-                  <Route path='/map' component={PathMap} />
-                </Switch>
+              <Route path='/map' component={PathMap} />
+            </Switch>
           )}
         />
       </Router>

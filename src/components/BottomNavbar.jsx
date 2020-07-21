@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import gooey from '../img/gooey.png';
-import { Constants } from '../Constants';
 import TypingEffect from './TypingEffect/TypingEffect';
 
 export function BottomNavbar({ gooeyMessageText }) {
+  //Constant max chars to be shown in collapsed view of the message
+  const maxChars = 130;
+
+  //To avoid collapsed mode for the Initial Message
+  const initialMessage =
+    '👋 Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks better. You can respond to my questions by selecting an appropriate reply in above 👆 User Section.';
+
   //Reference for gooey-message for DOM modification.
   let gooeyMessage = React.createRef();
 
@@ -26,16 +32,16 @@ export function BottomNavbar({ gooeyMessageText }) {
     const messageLength = gooeyText.length;
 
     // if message needs to be in collapsed mode (Long Message)
-    if (messageLength > Constants.maxChars) {
-      setdisplayMessage(gooeyText.substring(0, Constants.maxChars + 1));
-      sethiddenMessage(gooeyText.substring(Constants.maxChars));
+    if (messageLength > maxChars && gooeyText !== initialMessage) {
+      setdisplayMessage(gooeyText.substring(0, maxChars + 1));
+      sethiddenMessage(gooeyText.substring(maxChars));
       setisMessageLong(true);
-      setpostfix(Constants.readMore);
+      setpostfix('... Read More');
     } else {
       setdisplayMessage(gooeyText);
       setisMessageLong(false);
     }
-  }, [gooeyText]);
+  }, [gooeyText, maxChars]);
 
   useEffect(() => {
     setGooeyText(gooeyMessageText);
@@ -44,12 +50,12 @@ export function BottomNavbar({ gooeyMessageText }) {
   function collapse() {
     if (isCollapsed) {
       setdisplayMessage(displayMessage.concat(hiddenMessage));
-      setpostfix(Constants.showLess);
+      setpostfix('Show Less');
     } else {
       setdisplayMessage(
         displayMessage.toString().replace(hiddenMessage.toString(), ' ')
       );
-      setpostfix(Constants.readMore);
+      setpostfix('... Read More');
     }
     setisCollapsed(!isCollapsed);
 
@@ -65,7 +71,12 @@ export function BottomNavbar({ gooeyMessageText }) {
 
   return (
     <div className='bottom-nav scroll'>
-      <img className='gooey fade-in-to-left' src={gooey} alt='Gooey'></img>
+      <img
+        id='gooey'
+        className='gooey fade-in-to-left'
+        src={gooey}
+        alt='Gooey'
+      ></img>
       <div className='gooey-message  fade-in-to-left' ref={gooeyMessage}>
         {
           <TypingEffect
