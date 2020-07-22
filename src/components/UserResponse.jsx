@@ -10,8 +10,10 @@ export function UserResponse({ object, index, setChild, next }) {
           onClick={() => {
             if (object.child !== undefined) {
               setChild(object.child);
+            } else if (object.isGraph === true) {
+              document.location += 'map';
             } else if (object.link !== undefined) {
-              document.location += object.link;
+              document.location = object.link;
             }
           }}
         >
