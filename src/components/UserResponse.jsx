@@ -13,7 +13,7 @@ export function UserResponse({ object, index, setChild, next }) {
             } else if (object.isGraph === true) {
               document.location += 'map';
             } else if (object.link !== undefined) {
-              document.location = object.link;
+              window.open(object.link, '_blank');
             }
           }}
         >
