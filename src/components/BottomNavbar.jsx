@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import gooey from '../img/gooey.png';
-import TypingEffect from './TypingEffect/TypingEffect';
 
 export function BottomNavbar({ gooeyMessageText }) {
   //Constant max chars to be shown in collapsed view of the message
@@ -78,13 +77,7 @@ export function BottomNavbar({ gooeyMessageText }) {
         alt='Gooey'
       ></img>
       <div className='gooey-message  fade-in-to-left' ref={gooeyMessage}>
-        {
-          <TypingEffect
-            text={displayMessage}
-            typingDelay={0}
-            speed={10}
-          ></TypingEffect>
-        }
+        {displayMessage}
 
         {isMessageLong ? (
           <button className='message-collapse-button' onClick={collapse}>

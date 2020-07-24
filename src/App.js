@@ -22,11 +22,11 @@ export default function App() {
     <React.Fragment>
       <Background>
         <Navbar />
+        <BottomNavbar gooeyMessageText={gooeyMessage} />
         <UserMessageSection
           jsonPathMap={jsonPathMap}
           setjsonPathMap={(json) => setjsonPathMap(json)}
         />
-        <BottomNavbar gooeyMessageText={gooeyMessage} />
       </Background>
     </React.Fragment>
   );

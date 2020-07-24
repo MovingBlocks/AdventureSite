@@ -6,12 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .bottom-nav {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  width: auto;
   background: $bottomNavGradient;
-  height: 25%;
   padding: 2%;
 }
 .topnav {
@@ -48,28 +48,27 @@ body {
   margin: 0;
 }
 .gooey {
-  bottom: 10%;
-  position: absolute;
-  width: 15%;
-  height: auto;
+  position: relative;
+  height: 5em;
+  width: 50%;
+  max-width: 11em;
 }
 .gooey-message {
+  position: relative;
   border: solid 0.2em;
   border-color: $greenUtility;
   border-radius: 10px;
   width: auto;
-  min-height: 2em;
-  position: absolute;
-  margin-left: 17%;
+  height: auto;
+  margin-left: 3%;
   margin-right: 0.5%;
-  bottom: 20%;
   padding: 1%;
   max-width: 55%;
   background: $blackPrimary;
+  opacity: 0.85;
   font-size: 1.2em;
   color: $whitePrimary;
   word-wrap: break-word;
-  max-height: 100%;
   &:after {
     content: ' ';
     position: absolute;
@@ -94,7 +93,7 @@ body {
   padding-right: 1em;
 }
 .user-message-section {
-  margin-top: 1.5em;
+  margin-top: 2em;
   width: 100%;
   display: flex;
   justify-content: flex-end;
@@ -115,9 +114,9 @@ body {
   font-size: 1.5em;
   opacity: 0.85;
   color: $whitePrimary;
-  
-  & :hover{
-   border-color: $whitePrimary;
+
+  & :hover {
+    border-color: $whitePrimary;
   }
 }
 .arrow {
@@ -253,8 +252,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .gooey {
-    width: 35%;
-    height: auto;
+    width: 50%;
   }
   .user-img {
     max-height: 5em;
@@ -270,7 +268,6 @@ body {
     padding-right: 0.5em;
   }
   .gooey-message {
-    margin-left: 150px;
     bottom: 5%;
     padding: 10px;
     font-size: 1.1em;
@@ -278,8 +275,8 @@ body {
     &:after {
       border-top: 5px solid transparent;
       border-bottom: 5px solid transparent;
-      top: unset;
-      bottom: 10px;
+      bottom: unset;
+      top: 10px;
     }
   }
   .gooey-message.over-auto {
