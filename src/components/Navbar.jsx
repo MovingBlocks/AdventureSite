@@ -15,6 +15,17 @@ export function Navbar() {
     }
   }
 
+  /* Copy to clipboard function */
+
+  const copyToClipboard = (str) => {
+    const el = document.createElement('textarea');
+    el.value = str;
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+  };
+
   return (
     <div className='topnav' id='myTopnav' ref={topnav}>
       <a href='/' className='active'>
@@ -36,8 +47,32 @@ export function Navbar() {
         href='/'
         style={{ float: 'right', background: '#fff', color: '#000000' }}
       >
-        Start Journey
+        Save Journey
       </a>
+
+      {/* Permalink copy button */}
+      <button
+        className='share'
+        onClick={() => {
+          copyToClipboard(document.location);
+        }}
+      >
+        <span
+          role='img'
+          aria-label={'Click to get the sharable URL.'}
+          title={'Click to get the sharable URL.'}
+          className='share-link-button'
+        >
+          Copy Permalink
+        </span>
+        <span
+          role='img'
+          aria-label={'Click to get the sharable URL.'}
+          title={'Click to get the sharable URL.'}
+        >
+          🔗
+        </span>
+      </button>
     </div>
   );
 }
