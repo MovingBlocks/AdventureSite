@@ -150,15 +150,19 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 1em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0.1em;
   font-size: 3em;
   background-color: transparent;
   border-color: transparent;
   align-self: flex-start;
-  & .back-text {
-    margin-top: -2em;
-    color: $whitePrimary;
-    font-size: 0.5em;
+  & .back-img {
+    width: auto;
+    height: 1em;
+    padding: 0.05em;
+    background: greenyellow;
+    border-radius: 10em;
   }
 }
 
