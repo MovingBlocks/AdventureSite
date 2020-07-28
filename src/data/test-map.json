@@ -26,7 +26,6 @@
                     }
                   }
                 },
-
                 {
                   "name": "🎮 Just tell me about playing Terasology. 🎮",
                   "child": {
@@ -49,11 +48,32 @@
                   "name": "💻 Let's talk <code/>... I wish to Contribute 💻",
                   "child": {
                     "user-responses": [
-                      { "name": "Tell me about web dev." },
                       {
-                        "name": "I wish to know more about core Game Engine stuff.. (in Java) ☕",
+                        "name": "I wish to work on the core Game stuff.. (in Java) ☕",
                         "child": {
                           "user-responses": [
+                            {
+                              "name": "Let's setup the Developer Environment.",
+                              "child": {
+                                "user-responses": [
+                                  {
+                                    "name": "Learn stuff about Git ",
+                                    "link": "http://learngitbranching.js.org/"
+                                  },
+                                  {
+                                    "name": "Quick Start",
+                                    "link": "https://github.com/MovingBlocks/Terasology/wiki/Dev-Setup"
+                                  },
+                                  {
+                                    "name": "I know the basics, lets jump to Development",
+                                    "jump": "u0u0u2u0"
+                                  }
+                                ],
+                                "gooey-response": {
+                                  "gooey": "Here is some good to know stuff, you can skip this if you're already familiar."
+                                }
+                              }
+                            },
                             {
                               "name": "I wish to learn more about AI/Behaviour"
                             },
@@ -67,8 +87,7 @@
                                   },
                                   {
                                     "name": "I wish to know more about Shape Arch."
-                                  },
-                                  { "name": "etc." }
+                                  }
                                 ],
                                 "gooey-response": {
                                   "gooey": "What about Arch ?"
@@ -84,20 +103,95 @@
                           }
                         }
                       },
-                      { "name": "Etc" },
-                      { "name": "Etc.." },
-                      { "name": "Etc..Etc..Etc.." }
+                      {
+                        "name": "Tell me more about Artistic stuff. (3D/2D Design, Music, etc.)",
+                        "child": {
+                          "user-responses": [
+                            {
+                              "name": "I wish to know more about 3D Modeling.",
+                              "child": {
+                                "user-responses": [
+                                  {
+                                    "name": "Creation of animated models with Blender",
+                                    "link": "https://github.com/MovingBlocks/TeraMisc/blob/master/blender_addons/io_md5_exporter/tutorial/Tutorial.md"
+                                  },
+                                  {
+                                    "name": "Blender Assets",
+                                    "link": "https://github.com/MovingBlocks/Terasology/wiki/Using-Blender-Assets-as-Miniion-Models"
+                                  },
+                                  {
+                                    "name": "Collada Models",
+                                    "link": "https://github.com/MovingBlocks/Terasology/wiki/Collada-Models"
+                                  },
+                                  {
+                                    "name": "I wish to learn about 2D Stuff",
+                                    "jump": "u0u0u2u1u1"
+                                  }
+                                ],
+                                "gooey-response": {
+                                  "gooey": "What in 3D Modelling?"
+                                }
+                              }
+                            },
+                            {
+                              "name": "I would like to learn more about 2D Art.",
+                              "child": {
+                                "user-responses": [
+                                  {
+                                    "name": "Learn more about Aseprite",
+                                    "link": "https://github.com/MovingBlocks/Terasology/wiki/Aseprite"
+                                  },
+                                  {
+                                    "name": "Tell me about Textures",
+                                    "link": "https://github.com/MovingBlocks/Terasology/wiki/Textures"
+                                  }
+                                ],
+                                "gooey-response": {
+                                  "gooey": "What about 2D Designing?"
+                                }
+                              }
+                            },
+                            {
+                              "name": "I am interested in sound design roles",
+                              "child": {
+                                "user-responses": [
+                                  {
+                                    "name": "Video Game Sound Design 101",
+                                    "link": "https://www.gamedesigning.org/learn/video-game-sound/"
+                                  }
+                                ],
+                                "gooey-response": {
+                                  "gooey": "Here is a nice resource for Sound Design :)"
+                                }
+                              }
+                            }
+                          ],
+                          "gooey-response": {
+                            "gooey": "What type of artist are you?"
+                          }
+                        }
+                      },
+                      {
+                        "name": "Tell me about web dev."
+                      }
                     ],
-                    "gooey-response": { "gooey": "What About Dev ?" }
+                    "gooey-response": {
+                      "gooey": "What About Dev ?"
+                    }
                   }
                 }
               ],
-              "gooey-response": { "gooey": "What about Terasology?" }
+              "gooey-response": {
+                "gooey": "What about Terasology?"
+              }
             }
           },
-
-          { "name": "I wish to learn more about in DestinationSol." },
-          { "name": "👋 I'm new here, Help me to choose..." }
+          {
+            "name": "I wish to learn more about in DestinationSol."
+          },
+          {
+            "name": "👋 I'm new here, Help me to choose..."
+          }
         ],
         "gooey-response": {
           "gooey": "Which project you wish to explore? 🧐 "
