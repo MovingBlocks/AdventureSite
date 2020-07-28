@@ -3,7 +3,7 @@ import { UserResponse } from './UserResponse';
 import { useState, useEffect } from 'react';
 
 //List of the User Responses in User Section
-export function UserResponseList({ setjsonPathMap, jsonPathMap }) {
+export function UserResponseList({ setjsonPathMap, jsonPathMap, pathId }) {
   const [data, setData] = useState(jsonPathMap);
 
   useEffect(() => {
@@ -17,6 +17,7 @@ export function UserResponseList({ setjsonPathMap, jsonPathMap }) {
           key={d[0] + index}
           object={d[1]}
           index={index + 1}
+          pathId={pathId}
           setChild={(child) => {
             if (child !== undefined) {
               setjsonPathMap(child);
