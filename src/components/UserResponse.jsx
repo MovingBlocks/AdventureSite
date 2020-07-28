@@ -22,6 +22,8 @@ export function UserResponse({ object, index, pathId }) {
           to={
             object.child !== undefined
               ? url.toString() + 'u' + (Number(index) - 1).toString()
+              : object.jump !== undefined
+              ? object.jump.toString()
               : '/'
           }
           onClick={() => {
