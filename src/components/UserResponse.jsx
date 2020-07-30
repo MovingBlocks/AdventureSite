@@ -24,7 +24,9 @@ export function UserResponse({ object, index, pathId }) {
               ? url.toString() + 'u' + (Number(index) - 1).toString()
               : object.jump !== undefined
               ? object.jump.toString()
-              : '/'
+              : object.link === undefined
+              ? '/'
+              : url.toString()
           }
           onClick={() => {
             if (object.isGraph === true) {
