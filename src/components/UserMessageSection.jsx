@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PathMap from './PathMap';
 import { Switch, Route, HashRouter as Router } from 'react-router-dom';
 import UserMessage from './UserMessage';

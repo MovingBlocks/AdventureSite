@@ -18,7 +18,10 @@ export function UserResponse({ object, index, pathId }) {
     <center>
       <div className={'fade-in-to-right response-parent'}>
         <Link
-          className='response'
+          className={
+            //check if it's an external link
+            object.link !== undefined ? 'response link' : 'response'
+          }
           to={
             object.child !== undefined
               ? url.toString() + 'u' + (Number(index) - 1).toString()
@@ -37,6 +40,18 @@ export function UserResponse({ object, index, pathId }) {
           }}
         >
           {index + '. ' + object.name}
+          {object.link !== undefined ? (
+            <span
+              role='img'
+              aria-label={'External link.'}
+              title={'External link'}
+            >
+              {/* Add space and pin to notify about external link */}
+              &nbsp; 🔗
+            </span>
+          ) : (
+            ''
+          )}
         </Link>
       </div>
     </center>

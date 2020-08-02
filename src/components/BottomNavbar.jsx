@@ -7,7 +7,7 @@ export function BottomNavbar({ gooeyMessageText }) {
 
   //To avoid collapsed mode for the Initial Message
   const initialMessage =
-    '👋 Hey there, I am gooey! Welcome to Moving Blocks Tutorial Journey! I will be guiding you through this Journey to know Moving Blocks better. You can respond to my questions by selecting an appropriate reply in above 👆 User Section.';
+    '👋 Hey there, I am Gooey! Welcome to The Terasology Foundation Tutorial Journey! I will be guiding you through this Journey to know Project better. You can respond to my questions by selecting an appropriate reply in below 👇 User Section.';
 
   //Reference for gooey-message for DOM modification.
   let gooeyMessage = React.createRef();
@@ -33,7 +33,7 @@ export function BottomNavbar({ gooeyMessageText }) {
     // if message needs to be in collapsed mode (Long Message)
     if (messageLength > maxChars && gooeyText !== initialMessage) {
       setdisplayMessage(gooeyText.substring(0, maxChars + 1));
-      sethiddenMessage(gooeyText.substring(maxChars));
+      sethiddenMessage(gooeyText.substring(maxChars + 1));
       setisMessageLong(true);
       setpostfix('... Read More');
     } else {
@@ -77,7 +77,7 @@ export function BottomNavbar({ gooeyMessageText }) {
         alt='Gooey'
       ></img>
       <div className='gooey-message  fade-in-to-left' ref={gooeyMessage}>
-        {displayMessage}
+        <p>{displayMessage}</p>
 
         {isMessageLong ? (
           <button className='message-collapse-button' onClick={collapse}>
