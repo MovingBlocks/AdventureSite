@@ -105,6 +105,7 @@ body {
   border: solid 0.2em;
   border-color: $greenUtility;
   width: fit-content;
+  position: relative;
   border-radius: 10px;
   max-height: 10em;
   min-height: 35%;
@@ -193,10 +194,13 @@ body {
   border-radius: 20px;
 
   & .response {
-    width: max-content;
+    font-size: 0.8em;
     text-decoration: solid;
     color: $whitePrimary;
+  }
+  & .link {
     font-size: 0.8em;
+    color: $yellowPrimary;
   }
 }
 .cover-img {
