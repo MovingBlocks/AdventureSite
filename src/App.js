@@ -3,9 +3,10 @@ import { Navbar } from './components/Navbar';
 import { UserMessageSection } from './components/UserMessageSection';
 import { BottomNavbar } from './components/BottomNavbar';
 import { Background } from './components/Background';
-import json from './data/test-map.json';
+import json from './data/pathMap';
 
 export default function App() {
+  console.log(json);
   //PathMap Object
   const [jsonPathMap, setjsonPathMap] = useState(json);
 

@@ -20,7 +20,7 @@ export function UserResponse({ object, index, pathId }) {
         <Link
           className={
             //check if it's an external link
-            object.link !== undefined ? 'response link' : 'response'
+            object.link !== undefined ? 'link' : 'response'
           }
           to={
             object.child !== undefined
