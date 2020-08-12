@@ -1,4 +1,4 @@
-import data from '../../data/test-map.json';
+import data from '../../data/pathMap';
 
 //Take pathId as a parameter and returns JSON data from pathMap.
 export default function urlToJSON(u) {

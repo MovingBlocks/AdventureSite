@@ -7,7 +7,7 @@ export function BottomNavbar({ gooeyMessageText }) {
 
   //To avoid collapsed mode for the Initial Message
   const initialMessage =
-    '👋 Hey there, I am Gooey! Welcome to The Terasology Foundation Tutorial Journey! I will be guiding you through this Journey to know Project better. You can respond to my questions by selecting an appropriate reply in below 👇 User Section.';
+    '👋 Hey there, I am Gooey! Welcome to The Terasology Foundation Tutorial Journey! I will be guiding you through this Journey to know Project better. You can respond to my questions by selecting an appropriate reply from the user section below 👇';
 
   //Reference for gooey-message for DOM modification.
   let gooeyMessage = React.createRef();
