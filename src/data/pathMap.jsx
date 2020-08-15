@@ -1,4 +1,6 @@
-import Terasology from './Terasology';
+import Terasology from './Terasology/';
+import DestinationSol from './DestinationSol';
+import Contributor from './Terasology/Contributor';
 
 export default {
   'user-responses': [
@@ -12,9 +14,11 @@ export default {
           },
           {
             name: 'I wish to learn more about in DestinationSol.',
+            child: DestinationSol,
           },
           {
             name: '👋 I just wish to work on Game Stuff.',
+            child: Contributor,
           },
         ],
         'gooey-response': {

@@ -6,7 +6,6 @@ import { Background } from './components/Background';
 import json from './data/pathMap';
 
 export default function App() {
-  console.log(json);
   //PathMap Object
   const [jsonPathMap, setjsonPathMap] = useState(json);
 
