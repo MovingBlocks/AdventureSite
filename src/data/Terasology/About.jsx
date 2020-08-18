@@ -5,7 +5,7 @@ export default {
       link: 'https://terasology.org/about.html',
     },
     {
-      name: 'I wish to join the Community IRC',
+      name: 'I wish to join the Community Discord Channel',
       link: 'https://github.com/MovingBlocks/Terasology/wiki#communication',
     },
   ],
