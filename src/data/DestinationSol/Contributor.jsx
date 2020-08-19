@@ -1,8 +1,4 @@
 import ContributionResources from '../ContributionResources';
-import CoreGame from './Core Game';
-import Artist from './Artist';
-import Documentation from './Documentation';
-import UI from './UI/UI';
 
 export default {
   'user-responses': [
@@ -24,19 +20,15 @@ export default {
         'user-responses': [
           {
             name: 'I wish to work on the core Game Dev ☕',
-            child: CoreGame,
           },
           {
             name: 'I want to make mods.',
-            child: Artist,
           },
           {
             name: 'I wish to contribute with Translations and Documentation.',
-            child: Documentation,
           },
           {
-            name: 'I wish to contribute in Game UI.',
-            child: UI,
+            name: 'I wish to contribute in Game UI in Destination Sol.',
           },
         ],
         'gooey-response': {

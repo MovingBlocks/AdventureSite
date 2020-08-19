@@ -9,7 +9,7 @@ export default function urlToJSON(u) {
   if (u === null || u === undefined) {
     return d;
   }
-  //  console.log(d['user-responses'][0]['child']);
+
   url.forEach((i, index) => {
     if (d === undefined || index > 100) {
       d = data;
