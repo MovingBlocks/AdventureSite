@@ -32,7 +32,9 @@ The following generator is built using the following software, you'll need them 
 ---
 
 <h2 id="tools-used">Tools Used</h2>
+
 - [React](https://reactjs.org/docs/getting-started.html)
+
 - [Sass](https://sass-lang.com/)
 
 <h2 id="setup">Setup</h2>
@@ -56,24 +58,38 @@ The following generator is built using the following software, you'll need them 
 
 <h2 id="testing">Testing</h2>
 
-## You can test the website locally using `yarn start`.
+You can test the website locally using `yarn start`.
 
 <h2 id="deployment">Deployment</h2>
 
-## You can the website to github pages using `npm run deploy`.
+You can the website to github pages using `npm run deploy`.
 
 <h2 id="contributing">Contributing</h2>
 
 To add a new feature or fix a bug follow the steps -
 
 - Make sure your local workspace is up-to-date with the main repository.
-  - Add the original repository as `upstream` in you local git remote `git remote add upstream https://github.com/MovingBlocks/AdventureSite.git`
+
+  - Add the original repository as `upstream` in you local git remote
+
+    `git remote add upstream https://github.com/MovingBlocks/AdventureSite.git`
+
   - Fetch the latest code `git fetch upstream`
+
   - Checkout to your local master branch `git checkout master`
+
   - Merge changes from `upstream/master` to sync `git merge upstream/master`
-- Create a new branch to work on the new feature or bug via the updated master branch `git checkout -b "branch_name"`
-- Work on feature/bug and stage all the files to commit it on that branch `git add .` > `git commit -m "Commit Message"`
+
+- Create a new branch to work on the new feature or bug via the updated master branch
+
+  `git checkout -b "branch_name"`
+
+- Work on feature/bug and stage all the files to commit it on that branch
+
+  `git add .` > `git commit -m "Commit Message"`
+
 - Push the branch to your fork `git push -u origin branch_name`
+
 - Create a pull request.
 
 ---
