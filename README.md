@@ -1,4 +1,4 @@
-<h1 align="center">Turorial Journey Website for Moving Blocks!</h1>
+<h1 align="center">Turorial Journey Website for The Terasology Foundation!</h1>
 
 [![status](https://img.shields.io/badge/status-pre--alpha-red.svg)](https://github.com/MovingBlocks/AdventureSite)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
