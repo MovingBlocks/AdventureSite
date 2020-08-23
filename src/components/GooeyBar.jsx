@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import gooey from '../img/gooey.png';
 
-export function BottomNavbar({ gooeyMessageText }) {
+export function GooeyBar({ gooeyMessageText }) {
   //Constant max chars to be shown in collapsed view of the message
   const maxChars = 130;
 
@@ -69,7 +69,7 @@ export function BottomNavbar({ gooeyMessageText }) {
   }
 
   return (
-    <div className='bottom-nav scroll'>
+    <div className='gooey-bar scroll'>
       <img
         id='gooey'
         className='gooey fade-in-to-left'
