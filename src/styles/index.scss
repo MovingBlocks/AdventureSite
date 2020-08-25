@@ -334,6 +334,9 @@ body {
     overflow: auto;
   }
   .topnav {
+    button {
+      display: none;
+    }
     a {
       &:not(:first-child) {
         display: none;
