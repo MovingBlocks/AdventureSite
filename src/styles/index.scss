@@ -5,7 +5,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.bottom-nav {
+.gooey-bar {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -176,8 +176,8 @@ body {
 }
 
 .user-name {
-  text-align: center;
   font-size: 1em;
+  padding-bottom: 2em;
   color: $whitePrimary;
   font-family: 'Lucida Sans';
 }
@@ -334,6 +334,9 @@ body {
     overflow: auto;
   }
   .topnav {
+    button {
+      display: none;
+    }
     a {
       &:not(:first-child) {
         display: none;

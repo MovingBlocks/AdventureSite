@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import user from '../img/user-img-test.png';
+import user from '../img/user-img.png';
 import { UserResponseList } from './UserResponseList';
 import urlToJSON from './utils/urlToJSON';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ export default function UserMessage({ setjsonPathMap, jsonPathMap, pathId }) {
   useEffect(() => {
     setjsonPathMap(urlToJSON(pathId));
     urlToJSON(pathId);
-    setuserName('TheShubham99');
+    setuserName('You');
   }, [pathId, setjsonPathMap]);
 
   return (
@@ -40,7 +40,7 @@ export default function UserMessage({ setjsonPathMap, jsonPathMap, pathId }) {
       <div className='arrow'></div>
       <div className='user-profile-section'>
         <img className='user-img' alt={'User'} src={user}></img>
-        <p className='user-name'>{userName}</p>
+        <div className='user-name'>{userName}</div>
       </div>
     </div>
   );
