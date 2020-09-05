@@ -31,10 +31,14 @@ export function Navbar() {
       <a href='/' className='active'>
         Home
       </a>
-      <a href='/'>Link 1</a>
-      <a href='/'>Link 2</a>
-      <a href='/'>About</a>
-      <a href='/' style={{ margin: '0', padding: '0' }}>
+      <a href='http://terasology.org/'>Terasology</a>
+      <a href='https://destinationsol.org/'>Destination Sol</a>
+      <a href='https://discord.gg/um55t2'>Discord</a>
+      <a
+        href='/'
+        className='logo-parent'
+        style={{ margin: '0em', padding: '0em' }}
+      >
         <img src={logo} className='logo' alt='logo'></img>
       </a>
 
@@ -42,12 +46,6 @@ export function Navbar() {
         <div>
           <b>|||</b>
         </div>
-      </a>
-      <a
-        href='/'
-        style={{ float: 'right', background: '#fff', color: '#000000' }}
-      >
-        Save Journey
       </a>
 
       {/* Permalink copy button */}
