@@ -18,7 +18,9 @@
 
 <h2 id="about">About The Project</h2>
 
-Contributing to an open source project is very rewarding, but in the beginning it is also hard and confusing. The more complex a project and its codebase and the more numerous the contribution possibilities, the more difficult it is to find a good starting point or resources for an easy immersion into the project.
+Contributing to an open-source project is very rewarding, but in the beginning, it is also hard and confusing. The more complex a project and its codebase and the more numerous the contribution possibilities, the more difficult it is to find a good starting point or resources for an easy immersion into the project.
+
+The Adventure Site is a web app that provides Terasology’s various documentation resources to new contributors in a conversational form. This “Tutorial Journey” or “Adventure Site” supports new contributors to find suitable resources based on their contribution interests. A user can navigate by conversing with the Gooey and Gooey helps the user to learn more about the projects. Gooey helps the user to access the resources in a sequential order, which helps the user to study all possible resources related to that particular path.
 
 ---
 
