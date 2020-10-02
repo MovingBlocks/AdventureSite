@@ -38,7 +38,7 @@ The Paths behind this Adventure Site are defined by a JSON schema in the [pathMa
 - PathMap is a JSX file which compiles JSON schema of every path on a high level.
 - Every component inside `/data` directory contains path information for its respective Path.
 - The overall structure of the paths can be represnted by a nested JSON.
-- You can find the general structure of each component [here](/src/data/pathStructure.md).
+- You can find the general structure of each component [here](./pathStructure.md).
 
 ---
 
@@ -51,12 +51,12 @@ The Paths behind this Adventure Site are defined by a JSON schema in the [pathMa
   - **How?** 
     - To navigate inside child paths, hold `ctrl` and click on the subPath.   
     - This will take you to that particular path.
-- Make the required edits inside that path ( according to the [Path Structure](/src/data/pathStructure.md) ).
+- Make the required edits inside that path ( according to the [Path Structure](./pathStructure.md) ).
 - Save and build the project.    
 
 ### How to Add a new Path?
 - To add a new path we have to decide if it is a totally new path or a subPath?
-- If it is a new path, then you can create a new directory under the `src/data/` and name it accordingly. Also, add a appropriate path by following the [Path Structure](/src/data/pathStructure.md).
+- If it is a new path, then you can create a new directory under the `src/data/` and name it accordingly. Also, add a appropriate path by following the [Path Structure](./pathStructure.md).
 - If it is a sub path then create the path file inside appropriate directory under the `src/data/` and name it accordingly.
 - Make sure the path is added inside our existing flow.
 - Path can be imported by using an import statement (similar to react components).
