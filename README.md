@@ -24,6 +24,12 @@ The Adventure Site is a web app that provides Terasology’s various documentati
 
 ---
 
+<p  align="center">
+<img src="https://github.com/TheShubham99/TheShubham99.github.io/blob/master/Terasology/TJ/AdventureSiteOut.gif?raw=true"></img>
+</p>
+
+---
+
 <h2 id="project-structure">Project Structure</h2>
 
 The Paths behind this Adventure Site are defined by a JSON schema in the [pathMap](/src/data/pathMap.jsx).
