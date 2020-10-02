@@ -22,6 +22,47 @@ Contributing to an open source project is very rewarding, but in the beginning i
 
 ---
 
+<h2 id="project-structure">Project Structure</h2>
+
+The Paths behind this Adventure Site are defined by a JSON schema in the [pathMap](/src/data/pathMap.jsx).
+
+---
+### What is a Path inside [AdventureSite](http://prathamesh.me/AdventureSite/) -
+- A path is nothing but a set of sequential steps that a user will follow. 
+- The path will be decided according to the users choice.
+- Every Directory inside `/src/data` shows a group of similar path and `pathMap.jsx` is the root file which compiles evrything in one code.
+
+---
+
+### What is the PathMap -
+- PathMap is a JSX file which compiles JSON schema of every path on a high level.
+- Every component inside `/data` directory contains path information for its respective Path.
+- The overall structure of the paths can be represnted by a nested JSON.
+- You can find the general structure of each component [here](/src/data/pathStructure.md).
+
+---
+
+<h2 id="editors-guide">Editor's Guide</h2>
+
+### How to edit a path?
+- Open the project inside your favorite editor.
+- Go to the [pathMap](/src/data/pathMap.jsx) file.
+- Navigate to the point where you wish to edit the information.
+  - **How?** 
+    - To navigate inside child paths, hold `ctrl` and click on the subPath.   
+    - This will take you to that particular path.
+- Make the required edits inside that path ( according to the [Path Structure](/src/data/pathStructure.md) ).
+- Save and build the project.    
+
+### How to Add a new Path?
+- To add a new path we have to decide if it is a totally new path or a subPath?
+- If it is a new path, then you can create a new directory under the `src/data/` and name it accordingly. Also, add a appropriate path by following the [Path Structure](/src/data/pathStructure.md).
+- If it is a sub path then create the path file inside appropriate directory under the `src/data/` and name it accordingly.
+- Make sure the path is added inside our existing flow.
+- Path can be imported by using an import statement (similar to react components).
+
+---
+
 <h2 id="built-with">Built With</h2>
 
 The following generator is built using the following software, you'll need them installed in your workspace to run properly.
