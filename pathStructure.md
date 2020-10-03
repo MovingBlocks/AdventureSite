@@ -87,4 +87,4 @@
 
 ### Output - 
 
-![]("./SchemaDemo.jpg")
+![Hi](./SchemaDemo.jpg)
