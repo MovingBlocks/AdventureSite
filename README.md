@@ -18,7 +18,54 @@
 
 <h2 id="about">About The Project</h2>
 
-Contributing to an open source project is very rewarding, but in the beginning it is also hard and confusing. The more complex a project and its codebase and the more numerous the contribution possibilities, the more difficult it is to find a good starting point or resources for an easy immersion into the project.
+The Adventure Site is a web app that provides Terasology’s various documentation resources to new contributors in a conversational form. This “Tutorial Journey” or “Adventure Site” supports new contributors to find suitable resources based on their contribution interests. A user can navigate by conversing with the Gooey and Gooey helps the user to learn more about the projects. Gooey helps the user to access the resources in a sequential order, which helps the user to study all possible resources related to that particular path.
+
+---
+
+<p  align="center">
+<img src="https://github.com/TheShubham99/TheShubham99.github.io/blob/master/Terasology/TJ/AdventureSiteOut.gif?raw=true"></img>
+</p>
+
+---
+
+<h2 id="project-structure">Project Structure</h2>
+
+The Paths behind this Adventure Site are defined by a JSON schema in the [pathMap](/src/data/pathMap.jsx).
+
+---
+### What is a Path inside [AdventureSite](http://prathamesh.me/AdventureSite/) -
+- A path is nothing but a set of sequential steps that a user will follow. 
+- The path will be decided according to the users choice.
+- Every Directory inside `/src/data` shows a group of similar paths and `pathMap.jsx` is the root file which compiles everything in one code.
+
+---
+
+### What is the PathMap -
+- PathMap is a JSX file which compiles JSON schema of every path on a high level.
+- Every component inside `/data` directory contains path information for its respective Path.
+- The overall structure of the paths can be represented by a nested JSON.
+- You can find the general structure of each component [here](./pathStructure.md).
+
+---
+
+<h2 id="editors-guide">Editor's Guide</h2>
+
+### How to edit a path?
+- Open the project inside your favorite editor.
+- Go to the [pathMap](/src/data/pathMap.jsx) file.
+- Navigate to the point where you wish to edit the information.
+  - **How?** 
+    - To navigate inside child paths, hold `ctrl` and click on the subPath.   
+    - This will take you to that particular path.
+- Make the required edits inside that path ( according to the [Path Structure](./pathStructure.md) ).
+- Save and build the project.    
+
+### How to Add a new Path?
+- To add a new path we have to decide if it is a totally new path or a subPath?
+- If it is a new path, then you can create a new directory under the `src/data/` and name it accordingly. Also, add an appropriate path by following the [Path Structure](./pathStructure.md).
+- If it is a sub path then create the path file inside the appropriate directory in `src/data/` and name it accordingly.
+- Make sure the path is added inside our existing flow.
+- Path can be imported by using an import statement (similar to react components).
 
 ---
 
