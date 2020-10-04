@@ -23,7 +23,7 @@ The Adventure Site is a web app that provides Terasology’s various documentati
 ---
 
 <p  align="center">
-<img src="https://github.com/TheShubham99/TheShubham99.github.io/blob/master/Terasology/TJ/AdventureSiteOut.gif?raw=true"></img>
+<img src="./AdventureSite.gif"></img>
 </p>
 
 ---
