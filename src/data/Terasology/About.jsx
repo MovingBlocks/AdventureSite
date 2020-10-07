@@ -1,13 +1,23 @@
+import Contributor from "./Contributor";
+
 export default {
   'user-responses': [
     {
-      name: 'Tell me more',
-      link: 'https://terasology.org/about.html',
+      name: 'Cool! Tell me more!',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/What-is-Terasology',
     },
     {
-      name: 'I wish to join the Community Discord Channel',
-      link: 'https://github.com/MovingBlocks/Terasology/wiki#communication',
+      name: 'Interesting... But why?',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Why-Terasology'
     },
+    {
+      name: 'Sounds awesome! How can I play?',
+      child: Player,
+    },
+    {
+      name: 'Wow! I want to join!',
+      child: Contributor,
+    }
   ],
   'gooey-response': {
     gooey:

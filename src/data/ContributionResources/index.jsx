@@ -1,16 +1,7 @@
 export default {
   'user-responses': [
     {
-      name: 'Learn stuff about Git.',
-      link: 'http://learngitbranching.js.org/',
-    },
-    {
-      name: 'Labelling Issues and Pull Request',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/Labelling-Issues-and-Pull-Request',
-    },
-    {
-      name: 'How to Work on a PR Efficiently',
+      name: 'How to work on a PR efficiently',
       link:
         'https://github.com/MovingBlocks/Terasology/wiki/How-to-Work-on-a-PR-Efficiently',
     },
@@ -20,7 +11,7 @@ export default {
         'https://github.com/MovingBlocks/Terasology/wiki/Common-Style-Points',
     },
     {
-      name: 'Done. Lets continue with the Contributions.',
+      name: 'Done. Now I feel ready to contribute!',
       jump: 'u0u0u2u1',
     },
   ],

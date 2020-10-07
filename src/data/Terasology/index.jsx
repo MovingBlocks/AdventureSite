@@ -5,20 +5,19 @@ import Contributor from './Contributor';
 export default {
   'user-responses': [
     {
-      name: 'What is Terasology? 🧐',
+      name: '🧐 What is Terasology?',
       child: About,
     },
     {
-      name: '🎮 Just tell me about playing Terasology. 🎮',
+      name: '🎮 Just tell me about playing Terasology.',
       child: Player,
     },
     {
-      name: 'I am here to report a bug.',
-      link:
-        'https://discord.com/channels/270264625419911192/713903952764207164',
+      name: '🐞 I am here to report a bug / ask a question.',
+      child: Contact,
     },
     {
-      name: '💻 I wish to Contribute / Fix bugs. 💻',
+      name: '💻 I wish to contribute / fix bugs.',
       child: Contributor,
     },
   ],

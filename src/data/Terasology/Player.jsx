@@ -1,20 +1,23 @@
 export default {
   'user-responses': [
     {
-      name: 'No. I wish to download Terasology.',
+      name: 'No. Where can I download it?',
       link: 'https://terasology.org/download.html',
     },
     {
-      name: 'Yes. I have downloaded it. What next?',
-      link: 'https://github.com/MovingBlocks/Terasology#playing',
+      name: 'No. I only have the Terasology Launcher. How do I install the game?',
+      link: 'https://github.com/MovingBlocks/TerasologyLauncher#features',
     },
     {
-      name: 'Lets setup a headless server.',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/Setup-a-headless-server',
+      name: 'Yes. I installed it using the Terasology Launcher. How do I play?',
+      link: 'https://github.com/MovingBlocks/Terasology/blob/develop/docs/Playing.md#playing',
+    },
+    {
+      name: 'Yes. Singleplayer worked fine. How about Multiplayer?',
+      link: 'https://github.com/MovingBlocks/Terasology/blob/develop/docs/Playing.md#multiplayer',
     },
   ],
   'gooey-response': {
-    gooey: 'Do you have the game downloaded?',
+    gooey: 'Did you install Terasology?',
   },
 };

@@ -3,49 +3,28 @@ import CoreGame from './Core Game';
 import Artist from './Artist';
 import Documentation from './Documentation';
 import UI from './UI/UI';
+import Contact from '../Contact';
 
 export default {
   'user-responses': [
     {
-      name: 'Show me the prerequisites and resources. ',
-      child: ContributionResources,
+      name: 'I`m a developer. I code. Where is my coffee? ☕',
+      child: Development,
     },
     {
-      name: 'How to find and fix bugs?',
-      //temp
-      child: {
-        'user-responses': [{ name: 'oops.' }],
-        'gooey-response': { gooey: 'Working..' },
-      },
+      name: 'I`m an artist. 2D image art, 3D models, in-game structures, music and sound - stuff like that.',
+      child: Art,
     },
     {
-      name: 'I wish to explore other contribution domains.',
-      child: {
-        'user-responses': [
-          {
-            name: 'I wish to work on the core Game Dev ☕',
-            child: CoreGame,
-          },
-          {
-            name: 'I want to make mods.',
-            child: Artist,
-          },
-          {
-            name: 'I wish to contribute with Translations and Documentation.',
-            child: Documentation,
-          },
-          {
-            name: 'I wish to contribute in Game UI.',
-            child: UI,
-          },
-        ],
-        'gooey-response': {
-          gooey: 'Where do you wish to contribute?',
-        },
-      },
+      name: 'I`m a technical writer. Documentation comments are my code, doc guides and wiki pages my canvas.',
+      child: Documentation,
     },
+    {
+      name: 'Actually, I`m not sure I`m one of the above 😥 Can you help me figure out?',
+      child: Contact,
+    }
   ],
   'gooey-response': {
-    gooey: 'Here are some contribution areas..',
+    gooey: 'So I heard you want to contribute? Tell me who you are and I tell you where to go.',
   },
 };
