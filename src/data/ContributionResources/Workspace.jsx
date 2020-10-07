@@ -10,7 +10,7 @@ export default {
       },
       {
         name: 'Done. Now I`m ready to code!',
-        jump: 'u0u0u2u1',
+        jump: 'u0u0u3u0'
       },
     ],
     'gooey-response': {

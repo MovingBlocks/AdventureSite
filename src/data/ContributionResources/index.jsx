@@ -1,6 +1,7 @@
 import Git from "./Git";
 import Conventions from "./Conventions";
 import Workspace from "./Workspace";
+import Contributor from "../Terasology/Contributor";
 
 export default {
   'user-responses': [
@@ -26,7 +27,7 @@ export default {
     },
     {
       name: 'Okay, got it. Now I feel ready to contribute!',
-      jump: 'u0u0u2u1',
+      jump: 'u0u0u3',
     },
   ],
   'gooey-response': {

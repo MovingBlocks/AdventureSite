@@ -15,7 +15,7 @@ export default {
       child: Art,
     },
     {
-      name: "I'm a designer. My passion is creating in-game structures and UIs providing awesome user experience.",
+      name: "I'm a designer. My passion is creating in-game structures or UIs and provide awesome user experience.",
       child: Design,
     },
     {
