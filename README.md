@@ -86,6 +86,8 @@ The following generator is built using the following software, you'll need them 
 
 <h2 id="setup">Setup</h2>
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/MovingBlocks/AdventureSite)
+
 - Setting up workspace
 
   - node
