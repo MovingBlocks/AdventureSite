@@ -1,4 +1,5 @@
 import Contributor from "./Contributor";
+import Player from "./Player";
 
 export default {
   'user-responses': [

@@ -1,21 +1,35 @@
+import Git from "./Git";
+import Conventions from "./Conventions";
+import Workspace from "./Workspace";
+
 export default {
   'user-responses': [
     {
-      name: 'How to work on a PR efficiently',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/How-to-Work-on-a-PR-Efficiently',
+      name: 'How do I work with Git / GitHub?',
+      child: Git,
     },
     {
-      name: 'Common Style Points',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/Common-Style-Points',
+      name: 'Can you help me set up my workspace?',
+      child: Workspace,
     },
     {
-      name: 'Done. Now I feel ready to contribute!',
+      name: 'I want to know more about the codebase structure.',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Codebase-Structure',
+    },
+    {
+      name: 'How do I work on a PR most efficiently?',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/How-to-Work-on-a-PR-Efficiently',
+    },
+    {
+      name: 'Which conventions should I follow?',
+      child: Conventions
+    },
+    {
+      name: 'Okay, got it. Now I feel ready to contribute!',
       jump: 'u0u0u2u1',
     },
   ],
   'gooey-response': {
-    gooey: 'Here are some resources.',
+    gooey: "You're a new contributor? Awesome and welcome! How can I help you?",
   },
 };

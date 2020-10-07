@@ -1,4 +1,4 @@
-import ContributionResources from "../ContributionResources";
+import ContributionResources from ".";
 
 export default {
     'user-responses': [

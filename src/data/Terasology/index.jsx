@@ -1,6 +1,7 @@
 import About from './About';
 import Player from './Player';
 import Contributor from './Contributor';
+import Contact from './Contact';
 
 export default {
   'user-responses': [
@@ -13,7 +14,7 @@ export default {
       child: Player,
     },
     {
-      name: '🐞 I am here to report a bug / ask a question.',
+      name: "🐞 I'm here to report a bug / ask a question.",
       child: Contact,
     },
     {

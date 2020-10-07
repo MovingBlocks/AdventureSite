@@ -1,7 +1,7 @@
 export default {
     'user-responses': [
       {
-        name: 'Sounds great, I`d like to chat. Do you have Discord?',
+        name: "Sounds great, I'd like to chat. Do you have Discord?",
         link: 'https://discord.gg/terasology',
       },
       {
@@ -9,8 +9,8 @@ export default {
         link: 'https://github.com/MovingBlocks/Terasology/wiki/Using-IRC#using-our-chat-systems-including-irc',
       },
       {
-        name: 'Nice, I`m old school, is there a forum?',
-        link: 'forum.terasology.org/',
+        name: "Nice, I'm old school, is there a forum?",
+        link: 'https://forum.terasology.org/',
       }
     ],
     'gooey-response': {
