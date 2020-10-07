@@ -3,4 +3,5 @@ ports:
   onOpen: open-preview
 tasks:
 - init: npm install
-- command: npm run
+  command: npm start
+- command: npm start
