@@ -22,7 +22,7 @@ export default {
     },
     {
       name: 'Engine? Modules? Wait what?',
-      link: Architecture,
+      child: Architecture,
     },
   ],
   'gooey-response': {
