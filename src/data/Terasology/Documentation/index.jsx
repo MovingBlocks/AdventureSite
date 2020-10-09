@@ -1,15 +1,19 @@
-import Translation from './Translation';
-import Documentation from './Documentation';
-
 export default {
   'user-responses': [
-    Translation,
     {
-      name: 'How to contribute in Documentation?',
-      child: Documentation,
+      name: 'I want to add JavaDoc. Anything I should know?',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/JavaDoc',
+    },
+    {
+      name: 'No English? I want to internationalize Terasology!',
+      link: 'https://github.com/Terasology/TutorialI18n/wiki',
+    },
+    {
+      name: 'I want to contribute to the wiki. Where was that again?',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki',
     },
   ],
   'gooey-response': {
-    gooey: 'Select the topic you wish learn.',
+    gooey: 'Lorem ipsum dolor sit amet, consectetur... sorry, I was reading the docs. Where do you want to start documenting?',
   },
 };

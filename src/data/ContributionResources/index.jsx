@@ -1,30 +1,36 @@
+import Git from "./Git";
+import Conventions from "./Conventions";
+import Workspace from "./Workspace";
+import Contributor from "../Terasology/Contributor";
+
 export default {
   'user-responses': [
     {
-      name: 'Learn stuff about Git.',
-      link: 'http://learngitbranching.js.org/',
+      name: 'How do I work with Git / GitHub?',
+      child: Git,
     },
     {
-      name: 'Labelling Issues and Pull Request',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/Labelling-Issues-and-Pull-Request',
+      name: 'Can you help me set up my workspace?',
+      child: Workspace,
     },
     {
-      name: 'How to Work on a PR Efficiently',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/How-to-Work-on-a-PR-Efficiently',
+      name: 'I want to know more about the codebase structure.',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Codebase-Structure',
     },
     {
-      name: 'Common Style Points',
-      link:
-        'https://github.com/MovingBlocks/Terasology/wiki/Common-Style-Points',
+      name: 'How do I work on a PR most efficiently?',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/How-to-Work-on-a-PR-Efficiently',
     },
     {
-      name: 'Done. Lets continue with the Contributions.',
-      jump: 'u0u0u2u1',
+      name: 'Which conventions should I follow?',
+      child: Conventions
+    },
+    {
+      name: 'Okay, got it. Now I feel ready to contribute!',
+      jump: 'u0u0u3',
     },
   ],
   'gooey-response': {
-    gooey: 'Here are some resources.',
+    gooey: "You're a new contributor? Awesome and welcome! How can I help you?",
   },
 };
