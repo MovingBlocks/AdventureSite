@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import user from '../img/user-img.png';
 import { UserResponseList } from './UserResponseList';
 import urlToJSON from './utils/urlToJSON';
@@ -7,14 +7,29 @@ import BackIcon from '../img/back.png';
 
 export default function UserMessage({ setjsonPathMap, jsonPathMap, pathId }) {
   const [userName, setuserName] = useState('Test-User >');
+  const userMessageSection = useRef(null);
+
   useEffect(() => {
     setjsonPathMap(urlToJSON(pathId));
     urlToJSON(pathId);
     setuserName('You');
+    if(userMessageSection.current)
+      applyAvailableHeight()
   }, [pathId, setjsonPathMap]);
 
+  //This function finds the available space and set the user-message parent wrapper height accordingly
+  function applyAvailableHeight(){
+    const windowWidth = window.innerHeight;
+    const userMessageSectionOffset = userMessageSection.current.getBoundingClientRect().top;
+    const userMessageSectionStyle = window.getComputedStyle(userMessageSection.current);
+    let marginOffset = Number.parseInt(userMessageSectionStyle.getPropertyValue('margin-top'));
+    let availableSpace = windowWidth - ( userMessageSectionOffset + 2*marginOffset );
+    
+    userMessageSection.current.style.height = `${availableSpace}px`
+  }
+
   return (
-    <div className='user-message-section scroll'>
+    <div className='user-message-section scroll' ref={userMessageSection}>
       {/* Back button link */}
       {/* when pathId===undefined (i.e. First Message) --> Don't render back buttom.  */}
       {pathId !== undefined ? (

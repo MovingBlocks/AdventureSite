@@ -103,19 +103,18 @@ body {
   display: flex;
   justify-content: flex-end;
   flex-direction: row;
-  height: 50%;
 }
 .user-message {
+  box-sizing: border-box;
   overflow: auto;
   border: solid 0.2em;
   border-color: $greenUtility;
   width: fit-content;
   position: relative;
   border-radius: 10px;
-  max-height: 10em;
-  min-height: 35%;
+  height: fit-content;
+  max-height: 100%;
   padding: 1em;
-  padding-bottom: 0;
   background: $blackPrimary;
   font-size: 1.5em;
   opacity: 0.85;
