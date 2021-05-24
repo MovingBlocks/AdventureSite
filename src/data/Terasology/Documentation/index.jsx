@@ -2,7 +2,7 @@ export default {
   'user-responses': [
     {
       name: 'I want to add JavaDoc. Anything I should know?',
-      link: 'https://github.com/MovingBlocks/Terasology/wiki/JavaDoc',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Code-Conventions#javadoc',
     },
     {
       name: 'No English? I want to internationalize Terasology!',

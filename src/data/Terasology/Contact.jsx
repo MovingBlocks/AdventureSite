@@ -5,10 +5,6 @@ export default {
         link: 'https://discord.gg/terasology',
       },
       {
-        name: 'Okay, cool. IRC anybody?',
-        link: 'https://github.com/MovingBlocks/Terasology/wiki/Using-IRC#using-our-chat-systems-including-irc',
-      },
-      {
         name: "Nice, I'm old school, is there a forum?",
         link: 'https://forum.terasology.org/',
       }
