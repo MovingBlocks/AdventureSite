@@ -6,11 +6,11 @@ export default {
     },
     {
       name: 'Do you have conventions for comments, too?',
-      link: 'https://github.com/MovingBlocks/Terasology/wiki/JavaDoc',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Code-Conventions#javadoc',
     },
     {
       name: 'How about testing?',
-      link: 'https://github.com/MovingBlocks/Terasology/wiki/Unit-Testing',
+      link: 'https://github.com/MovingBlocks/Terasology/wiki/Code-Conventions#testing',
     },
   ],
   'gooey-response': {

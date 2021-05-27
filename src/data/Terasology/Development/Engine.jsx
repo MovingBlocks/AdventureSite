@@ -10,7 +10,7 @@ export default {
       },
       {
         name: "I'm convinced, where do I find engine todos?",
-        link: 'https://github.com/MovingBlocks/Terasology/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22Good+First+Issue%22',
+        link: 'https://github.com/MovingBlocks/Terasology/contribute',
       }
     ],
     'gooey-response': {

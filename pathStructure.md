@@ -76,7 +76,7 @@
       },
       {
          "name":"I wish to join the Community Discord Channel",
-         "link":"https://github.com/MovingBlocks/Terasology/wiki#communication"
+         "link":"https://discordapp.com/invite/terasology"
       }
    ],
    "gooey-response":{
