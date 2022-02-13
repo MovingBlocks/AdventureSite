@@ -1,6 +1,6 @@
 import React from 'react';
 import PathMap from './PathMap';
-import { Switch, Route, HashRouter as Router } from 'react-router-dom';
+import { Routes, Route, HashRouter as Router } from 'react-router-dom';
 import UserMessage from './UserMessage';
 
 export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
@@ -8,7 +8,7 @@ export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
     <Router>
       <Route
         render={({ location }) => (
-          <Switch location={location}>
+          <Routes location={location}>
             <Route
               // pathId - URL param for directly accessing particular path.
               path='/:pathId?'
@@ -24,7 +24,7 @@ export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
             />
 
             <Route path='/map' component={PathMap} />
-          </Switch>
+          </Routes>
         )}
       />
     </Router>
