@@ -2,7 +2,7 @@ import Terasology from './Terasology/';
 import DestinationSol from './DestinationSol';
 import Contributor from './Terasology/Contributor';
 
-export default {
+const pathMap = {
   'user-responses': [
     {
       name: 'Gotcha 👍 Let the Journey begin. 🌄',
@@ -33,3 +33,5 @@ export default {
     firstMessage: true,
   },
 };
+
+export default pathMap;

@@ -2,7 +2,7 @@ import ContributionResources from "../../ContributionResources";
 import Architecture from "./Architecture";
 import Workspace from "../../ContributionResources/Workspace";
 
-export default {
+const index = {
   'user-responses': [
     {
       name: "No, I'm new here or have contributed only in other areas before.",
@@ -29,3 +29,5 @@ export default {
     gooey: "So I heard you'd like to code? Have you contributed to Terasology as a developer before?",
   },
 };
+
+export default index;

@@ -2,7 +2,7 @@ import AboutDS from './About';
 import Player from './Player';
 import Contributor from './Contributor';
 
-export default {
+const index = {
   'user-responses': [
     {
       name: 'What is DestinationSol? 🧐',
@@ -26,3 +26,5 @@ export default {
     gooey: 'What about DestinationSol?',
   },
 };
+
+export default index;

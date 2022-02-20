@@ -1,4 +1,4 @@
-export default {
+const twoD = {
   'user-responses': [
     {
       name: 'Tell me about Textures.',
@@ -13,3 +13,5 @@ export default {
     gooey: 'Terasology 2D Art is all about block textures, icons and so on.',
   },
 };
+
+export default twoD;

@@ -3,7 +3,7 @@ import Player from './Player';
 import Contributor from './Contributor';
 import Contact from './Contact';
 
-export default {
+const index = {
   'user-responses': [
     {
       name: '🧐 What is Terasology?',
@@ -26,3 +26,5 @@ export default {
     gooey: 'What about Terasology?',
   },
 };
+
+export default index;

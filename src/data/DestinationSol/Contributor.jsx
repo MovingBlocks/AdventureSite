@@ -1,6 +1,6 @@
 import ContributionResources from '../ContributionResources';
 
-export default {
+const Contributor = {
   'user-responses': [
     {
       name: 'Show me the prerequisites and resources. ',
@@ -41,3 +41,5 @@ export default {
     gooey: 'Here are some contribution areas..',
   },
 };
+
+export default Contributor;

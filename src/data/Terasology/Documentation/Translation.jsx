@@ -1,4 +1,4 @@
-export default ({
+const Translation = ({
   name: 'Take me to the translation site.',
   child: {
     'user-responses': [{ name: 'Ok.', jump: 'u0u0u2u0' }],
@@ -12,3 +12,5 @@ export default ({
   name: 'How to translate for Terasology?',
   link: 'https://github.com/MovingBlocks/Terasology/wiki/Translation-Guide',
 });
+
+export default Translation;

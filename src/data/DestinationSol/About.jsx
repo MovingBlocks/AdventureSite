@@ -1,4 +1,4 @@
-export default {
+const About = {
   'user-responses': [
     {
       name: 'Tell me more',
@@ -15,3 +15,5 @@ export default {
       'Destination Sol is an open-source, free-to-play hardcore arcade/RPG. You start as a pilot of a small fighter ship on the edge of a star system, and you are free to explore the game world, land on planets, fight with enemies, upgrade your ship and equipment, hire mercenaries, mine asteroids, and more.',
   },
 };
+
+export default About;
