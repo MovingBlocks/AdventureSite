@@ -1,4 +1,4 @@
-<h1 align="center">Turorial Journey Website for The Terasology Foundation!</h1>
+<h1 style="text-align: center;">Tutorial Journey Website for The Terasology Foundation!</h1>
 
 [![status](https://img.shields.io/badge/status-pre--alpha-red.svg)](https://github.com/MovingBlocks/AdventureSite)
 [![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://opensource.org/licenses/MIT)
@@ -6,11 +6,11 @@
 
 ---
 
-<p align="center">
-  <a href="#setup">About</a>&nbsp;&nbsp;
-  <a href="#help">Setup</a>&nbsp;&nbsp;
+<p style="text-align: center;">
+  <a href="#about">About</a>&nbsp;&nbsp;
+  <a href="#setup">Setup</a>&nbsp;&nbsp;
   <a href="#testing">Testing</a>&nbsp;&nbsp;
-  <a href="#deployment">Testing</a>&nbsp;&nbsp;
+  <a href="#deployment">Deployment</a>&nbsp;&nbsp;
   <a href="#contributing">Contributing</a>
 </p>
 
@@ -22,8 +22,8 @@ The Adventure Site is a web app that provides Terasology’s various documentati
 
 ---
 
-<p  align="center">
-<img src="./AdventureSite.gif"></img>
+<p style="text-align: center;">
+<img src="./AdventureSite.gif" alt="AdventureSite gif"/>
 </p>
 
 ---
@@ -116,7 +116,7 @@ You can test the website locally using `yarn start`.
 
 <h2 id="deployment">Deployment</h2>
 
-You can the website to github pages using `npm run deploy`.
+You can the website to GitHub pages using `npm run deploy`.
 
 <h2 id="contributing">Contributing</h2>
 
