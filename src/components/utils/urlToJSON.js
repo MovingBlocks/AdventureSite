@@ -3,13 +3,13 @@ import data from '../../data/pathMap';
 //Take pathId as a parameter and returns JSON data from pathMap.
 export default function urlToJSON(u) {
   //url format - u[position]-u[position]
-  var url = String(u).split('u');
   var d = data;
 
   if (u === null || u === undefined) {
     return d;
   }
 
+  var url = String(u).split('u');
   url.forEach((i, index) => {
     if (d === undefined || index > 100) {
       d = data;

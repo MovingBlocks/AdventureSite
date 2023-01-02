@@ -22,7 +22,7 @@ export default {
           },
         ],
         'gooey-response': {
-          gooey: 'Which project you wish to explore? 🧐 ',
+          gooey: 'Which project do you wish to explore? 🧐 ',
         },
       },
     },
