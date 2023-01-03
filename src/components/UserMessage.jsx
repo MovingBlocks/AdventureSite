@@ -9,7 +9,7 @@ import createPathIdQuery from './utils/createPathIdQuery';
 export default function UserMessage({ setjsonPathMap, jsonPathMap }) {
   const [userName, setuserName] = useState('Test-User >');
 
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   const pathId = searchParams.get('pathId');
 
   useEffect(() => {
@@ -36,7 +36,6 @@ export default function UserMessage({ setjsonPathMap, jsonPathMap }) {
         {
           <UserResponseList
             pathId={pathId}
-            setSearchParams={setSearchParams}
             setjsonPathMap={(json) => {
               setjsonPathMap(json);
             }}

@@ -6,7 +6,6 @@ import { useState, useEffect } from 'react';
 export function UserResponseList({
   setjsonPathMap,
   jsonPathMap,
-  setSearchParams,
   pathId,
 }) {
   const [data, setData] = useState(jsonPathMap);
@@ -28,7 +27,6 @@ export function UserResponseList({
               setjsonPathMap(child);
             }
           }}
-          setSearchParams={setSearchParams}
         />
       ))}
     </div>

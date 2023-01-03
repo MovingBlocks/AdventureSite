@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import createPathIdQuery from './utils/createPathIdQuery';
 
 //Each UserResponse
-export function UserResponse({ object, index, pathId, setSearchParams }) {
+export function UserResponse({ object, index, pathId }) {
   //url to visit on user selection
   const [url, setURL] = useState('');
 
