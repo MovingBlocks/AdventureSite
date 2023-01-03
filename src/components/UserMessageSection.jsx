@@ -1,32 +1,34 @@
 import React from 'react';
 import PathMap from './PathMap';
-import { Routes, Route, HashRouter as Router } from 'react-router-dom';
+import {
+  Routes,
+  Route,
+  BrowserRouter as Router,
+  createBrowserRouter,
+  RouterProvider,
+  createRoutesFromElements,
+} from 'react-router-dom';
 import UserMessage from './UserMessage';
 
 export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
-  return (
-    <Router>
-      <Route
-        render={({ location }) => (
-          <Routes location={location}>
-            <Route
-              // pathId - URL param for directly accessing particular path.
-              path='/:pathId?'
-              component={({ match }) => (
-                <div className={'fade-in-to-right'}>
-                  <UserMessage
-                    pathId={match.params.pathId}
-                    setjsonPathMap={(json) => setjsonPathMap(json)}
-                    jsonPathMap={jsonPathMap}
-                  />
-                </div>
-              )}
-            />
-
-            <Route path='/map' component={PathMap} />
-          </Routes>
-        )}
-      />
-    </Router>
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+        <Route path="/map" element={PathMap} />
+        <Route
+          path="/AdventureSite"
+          element={
+            <div className={'fade-in-to-right'}>
+              <UserMessage
+                setjsonPathMap={(json) => setjsonPathMap(json)}
+                jsonPathMap={jsonPathMap}
+              />
+            </div>
+          }
+        />
+      </>
+    )
   );
+
+  return <RouterProvider router={router} />;
 }

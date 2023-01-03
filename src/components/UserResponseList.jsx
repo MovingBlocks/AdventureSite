@@ -3,7 +3,11 @@ import { UserResponse } from './UserResponse';
 import { useState, useEffect } from 'react';
 
 //List of the User Responses in User Section
-export function UserResponseList({ setjsonPathMap, jsonPathMap, pathId }) {
+export function UserResponseList({
+  setjsonPathMap,
+  jsonPathMap,
+  pathId,
+}) {
   const [data, setData] = useState(jsonPathMap);
 
   useEffect(() => {

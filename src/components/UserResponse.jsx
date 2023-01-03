@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import createPathIdQuery from './utils/createPathIdQuery';
 
 //Each UserResponse
 export function UserResponse({ object, index, pathId }) {
@@ -7,7 +8,7 @@ export function UserResponse({ object, index, pathId }) {
   const [url, setURL] = useState('');
 
   useEffect(() => {
-    if (pathId === undefined) {
+    if (!pathId) {
       setURL('');
     } else {
       setURL(pathId);
@@ -24,12 +25,15 @@ export function UserResponse({ object, index, pathId }) {
           }
           to={
             object.child !== undefined
-              ? url.toString() + 'u' + (Number(index) - 1).toString()
+              ? createPathIdQuery(
+                url.toString() +
+                'u' +
+                (Number(index) - 1).toString())
               : object.jump !== undefined
-              ? object.jump.toString()
+              ? createPathIdQuery(object.jump.toString())
               : object.link === undefined
               ? '/'
-              : url.toString()
+              : createPathIdQuery(url.toString())
           }
           onClick={() => {
             if (object.isGraph === true) {

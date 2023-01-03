@@ -1,7 +1,6 @@
-import Git from "./Git";
-import Conventions from "./Conventions";
-import Workspace from "./Workspace";
-import Contributor from "../Terasology/Contributor";
+import Git from './Git';
+import Conventions from './Conventions';
+import Workspace from './Workspace';
 
 export default {
   'user-responses': [
@@ -23,7 +22,7 @@ export default {
     },
     {
       name: 'Which conventions should I follow?',
-      child: Conventions
+      child: Conventions,
     },
     {
       name: 'Okay, got it. Now I feel ready to contribute!',

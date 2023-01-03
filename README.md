@@ -116,7 +116,7 @@ You can test the website locally using `yarn start`.
 
 <h2 id="deployment">Deployment</h2>
 
-You can the website to GitHub pages using `npm run deploy`.
+You can deploy the website to GitHub pages using `npm run deploy`.
 
 <h2 id="contributing">Contributing</h2>
 
