@@ -6,12 +6,13 @@ import UserMessage from './UserMessage';
 export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
   return (
     <Router>
+      <Routes>
       <Route
         render={({ location }) => (
           <Routes location={location}>
             <Route
               // pathId - URL param for directly accessing particular path.
-              path='/:pathId?'
+              path='/:pathId? '
               component={({ match }) => (
                 <div className={'fade-in-to-right'}>
                   <UserMessage
@@ -27,6 +28,7 @@ export function UserMessageSection({ setjsonPathMap, jsonPathMap }) {
           </Routes>
         )}
       />
+      </Routes>
     </Router>
   );
 }

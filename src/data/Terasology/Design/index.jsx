@@ -1,4 +1,4 @@
-export default {
+const index = {
   'user-responses': [
     {
       name: 'Call me "Bob the Builder" and tell me about in-game structures.',
@@ -17,3 +17,5 @@ export default {
     gooey: 'What would you like to design?',
   },
 };
+
+export default index;

@@ -3,7 +3,7 @@ import Conventions from "./Conventions";
 import Workspace from "./Workspace";
 import Contributor from "../Terasology/Contributor";
 
-export default {
+const index = {
   'user-responses': [
     {
       name: 'How do I work with Git / GitHub?',
@@ -34,3 +34,5 @@ export default {
     gooey: "You're a new contributor? Awesome and welcome! How can I help you?",
   },
 };
+
+export default index;

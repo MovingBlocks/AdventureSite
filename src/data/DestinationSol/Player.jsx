@@ -1,4 +1,4 @@
-export default {
+const Player = {
   'user-responses': [
     {
       name: 'No. I wish to download DestinationSol.',
@@ -14,3 +14,5 @@ export default {
     gooey: 'Do you have the game downloaded?',
   },
 };
+
+export default Player;

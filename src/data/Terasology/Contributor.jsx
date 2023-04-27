@@ -4,7 +4,7 @@ import Documentation from './Documentation';
 import Design from './Design';
 import Contact from './Contact';
 
-export default {
+const Contributor = {
   'user-responses': [
     {
       name: "I'm a developer. I code. Where is my coffee? ☕",
@@ -31,3 +31,5 @@ export default {
     gooey: 'So I heard you want to contribute? Tell me who you are and I tell you where to go.',
   },
 };
+
+export default Contributor;

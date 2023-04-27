@@ -1,4 +1,4 @@
-export default {
+const Sound = {
   'user-responses': [
     {
       name: 'Video Game Sound Design 101',
@@ -9,3 +9,5 @@ export default {
     gooey: 'Here is a nice resource for Sound Design :)',
   },
 };
+
+export default Sound;

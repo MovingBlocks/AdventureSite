@@ -1,4 +1,4 @@
-export default {
+const Player = {
   'user-responses': [
     {
       name: 'No. Where can I download it?',
@@ -21,3 +21,5 @@ export default {
     gooey: 'Did you install Terasology?',
   },
 };
+
+export default Player;

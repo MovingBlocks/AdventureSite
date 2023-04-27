@@ -1,4 +1,4 @@
-export default {
+const threeD = {
   'user-responses': [
     {
       name: 'Creation of animated models with Blender',
@@ -9,3 +9,5 @@ export default {
     gooey: 'What in 3D Modeling?',
   },
 };
+
+export default threeD;

@@ -2,7 +2,7 @@ import TwoD from './2D'
 import ThreeD from './3D'
 import Sound from './Sound'
 
-export default {
+const index = {
   'user-responses': [
     {
       name: 'Show me open tasks related to art',
@@ -25,3 +25,5 @@ export default {
     gooey: 'What type of art would you like to contribute?',
   },
 };
+
+export default index;

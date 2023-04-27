@@ -1,4 +1,4 @@
-export default {
+const index = {
   'user-responses': [
     {
       name: 'I want to add JavaDoc. Anything I should know?',
@@ -17,3 +17,5 @@ export default {
     gooey: 'Lorem ipsum dolor sit amet, consectetur... sorry, I was reading the docs. Where do you want to start documenting?',
   },
 };
+
+export default index;

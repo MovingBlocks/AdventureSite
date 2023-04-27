@@ -1,4 +1,4 @@
-export default {
+const Convention = {
   'user-responses': [
     {
       name: 'Code Conventions, please.',
@@ -17,3 +17,5 @@ export default {
     gooey: 'Conventions help a lot to keep code readable, even if many different people contribute to it. For what would you like to see our conventions?',
   },
 };
+
+export default Convention;
